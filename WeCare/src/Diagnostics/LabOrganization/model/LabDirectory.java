@@ -4,10 +4,34 @@
  */
 package Diagnostics.LabOrganization.model;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author rishabagarwal
+ * @author parvathypillai
  */
 public class LabDirectory {
     
+    private ArrayList<Lab> labDirectory;
+    
+    
+    public LabDirectory(){
+        this.labDirectory = new ArrayList();
+    }
+    
+    public ArrayList<Lab> getLabDirectory(){
+        return labDirectory;
+    }
+    
+    public Lab addLab(){
+        Lab lab = new Lab();
+        labDirectory.add(lab);
+        return lab;
+    }
+
+    public void deleteLab(Lab selectedLab){
+        labDirectory.remove(selectedLab);
+        
+        
+    }
 }
