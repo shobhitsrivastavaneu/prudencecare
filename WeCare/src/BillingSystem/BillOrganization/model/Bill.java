@@ -10,4 +10,6 @@ package BillingSystem.BillOrganization.model;
  */
 public class Bill {
     
+    
+    
 }

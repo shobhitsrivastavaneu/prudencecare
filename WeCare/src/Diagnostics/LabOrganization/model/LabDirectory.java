@@ -30,8 +30,6 @@ public class LabDirectory {
     }
 
     public void deleteLab(Lab selectedLab){
-        labDirectory.remove(selectedLab);
-        
-        
+        labDirectory.remove(selectedLab);    
     }
 }
