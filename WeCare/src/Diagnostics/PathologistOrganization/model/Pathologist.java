@@ -6,8 +6,38 @@ package Diagnostics.PathologistOrganization.model;
 
 /**
  *
- * @author rishabagarwal
+ * @author parvathypillai
  */
 public class Pathologist {
     
+    int pathalogistID;
+    String pathalogistName;
+    long phone;
+
+    public int getPathalogistID() {
+        return pathalogistID;
+    }
+
+    public void setPathalogistID(int pathalogistID) {
+        this.pathalogistID = pathalogistID;
+    }
+
+    public String getPathalogistName() {
+        return pathalogistName;
+    }
+
+    public void setPathalogistName(String pathalogistName) {
+        this.pathalogistName = pathalogistName;
+    }
+
+    public long getPhone() {
+        return phone;
+    }
+
+    public void setPhone(long phone) {
+        this.phone = phone;
+    }
+    
+    
+   
 }
