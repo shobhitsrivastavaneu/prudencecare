@@ -4,94 +4,41 @@
  */
 package PatientManagement.Doctor.model;
 
+import PatientManagement.Patient.model.User;
+import java.util.Date;
 
 /**
  *
  * @author shobhitsrivastava
  */
-public class Doctor {
+public class Doctor extends User {
+
+  public Doctor(){}
     
-
-    public String getFirstName() {
-        return firstName;
+    
+    public Doctor(String userName, String password, String userId, String PersonName, String address, String gender, String phoneNumber, Date dateOfBirth) {
+        super(userName, password, userId, PersonName, address, gender, phoneNumber, dateOfBirth);
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    private String doctorSpeciality;
+    private String hospitalName;
+
+    public String getDoctorSpeciality() {
+        return doctorSpeciality;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getHospitalName() {
+        return hospitalName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setDoctorSpeciality(String doctorSpeciality) {
+        this.doctorSpeciality = doctorSpeciality;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    public int getDepartmentId() {
-        return departmentId;
-    }
-
-    public void setDepartmentId(int departmentId) {
-        this.departmentId = departmentId;
+    public void setHospitalName(String hospitalName) {
+        this.hospitalName = hospitalName;
     }
     
-    String firstName;
-    String lastName;
-    String email;
-    String phone;
-    String address;
-    String city;
-    String state;
-    String department;
-    int departmentId;
     
+
 }
