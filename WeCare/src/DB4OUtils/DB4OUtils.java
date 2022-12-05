@@ -58,7 +58,7 @@ public class DB4OUtils {
         ObjectSet<DatabaseConfiguration> systems = conn.query( DatabaseConfiguration.class); // Change to the object you want to save
         DatabaseConfiguration system;
         if (systems.size() == 0){
-            system = Connection.configure();  // If there's no System in the record, create a new one
+            system = Connection.configure();  
         }
         else{
             system = systems.get(systems.size() - 1);
