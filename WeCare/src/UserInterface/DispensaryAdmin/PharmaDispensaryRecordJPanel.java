@@ -5,6 +5,7 @@
  */
 package UserInterface.DispensaryAdmin;
 
+import UserInterface.PharmaAdmin.*;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Essentials.Medicine;
