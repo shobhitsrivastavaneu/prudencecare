@@ -27,11 +27,11 @@ import java.util.Map;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-import userinterface.AdministrativeRole.ManageEmployeeJPanel;
-import userinterface.AdministrativeRole.ManageOrgJPanel;
-import userinterface.AdministrativeRole.ManageOrganizationJPanel;
-import userinterface.AdministrativeRole.ManageUserAccountJPanel;
-import userinterface.VaccineScientistRole.ViewVaccineJPanel;
+import UserInterface.AdministrativeRole.ManageEmployeeJPanel;
+import UserInterface.AdministrativeRole.ManageOrgJPanel;
+import UserInterface.AdministrativeRole.ManageOrganizationJPanel;
+import UserInterface.AdministrativeRole.ManageUserAccountJPanel;
+import UserInterface.VaccineScientistRole.ViewVaccineJPanel;
 
 /**
  *

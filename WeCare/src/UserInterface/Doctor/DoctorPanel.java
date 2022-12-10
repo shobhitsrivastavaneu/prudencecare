@@ -19,7 +19,7 @@ import java.util.Map;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-import userinterface.PatientRole.PatientHistoryJPanel;
+import UserInterface.PatientRole.PatientHistoryJPanel;
 
 /**
  *

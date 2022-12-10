@@ -19,8 +19,8 @@ import org.jfree.chart.ChartFrame;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PiePlot;
 import org.jfree.data.general.DefaultPieDataset;
-import userinterface.PatientRole.CreatePatientJPanel;
-import userinterface.PatientRole.ViewPatientJPanel;
+import UserInterface.PatientRole.CreatePatientJPanel;
+import UserInterface.PatientRole.ViewPatientJPanel;
 
 /**
  *
