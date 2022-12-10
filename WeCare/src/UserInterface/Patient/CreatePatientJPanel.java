@@ -43,7 +43,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
-import userinterface.SystemAdminWorkArea.ManagePateintJPanel;
+import UserInterface.SystemAdminWorkArea.ManagePateintJPanel;
 
 /**
  *

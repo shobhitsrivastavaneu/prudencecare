@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userinterface.DiagnosticsAdmin;
+package UserInterface.DiagnosticsAdmin;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.DiagnosticsOrganization;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.LabPatientWorkRequest;
+import Business.WorkQueue.DiagnosticsPatientWorkRequest;
 import Business.WorkQueue.VaccineWorkRequest;
 import java.awt.CardLayout;
 import java.util.Collections;
@@ -23,10 +23,10 @@ import java.util.Map;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-import userinterface.AdministrativeRole.ManageEmployeeJPanel;
-import userinterface.AdministrativeRole.ManageOrgJPanel;
-import userinterface.AdministrativeRole.ManageOrganizationJPanel;
-import userinterface.AdministrativeRole.ManageUserAccountJPanel;
+import UserInterface.AdministrativeRole.ManageEmployeeJPanel;
+import UserInterface.AdministrativeRole.ManageOrgJPanel;
+import UserInterface.AdministrativeRole.ManageOrganizationJPanel;
+import UserInterface.AdministrativeRole.ManageUserAccountJPanel;
 
 
 /**

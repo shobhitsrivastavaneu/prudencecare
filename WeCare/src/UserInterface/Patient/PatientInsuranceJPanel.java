@@ -18,7 +18,7 @@ import javax.swing.UIManager;
 import javax.swing.plaf.ColorUIResource;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
-import userinterface.InsuranceAdminWorkArea.ViewPolicyWorkAreaJPanel;
+import UserInterface.InsuranceAdminWorkArea.ViewPolicyWorkAreaJPanel;
 
 /**
  *

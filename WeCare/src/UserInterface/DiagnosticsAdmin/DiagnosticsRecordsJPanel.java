@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userinterface.DiagnosticsAdmin;
+package UserInterface.DiagnosticsAdmin;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Organization.DiagnosticsOrganization;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.LabPatientWorkRequest;
+import Business.WorkQueue.DiagnosticsPatientWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.awt.Font;
@@ -64,8 +64,8 @@ public class DiagnosticsRecordsJPanel extends javax.swing.JPanel {
     public void populateAllRecords(){
                DefaultTableModel model = (DefaultTableModel)respTable.getModel();
         model.setRowCount(0);
-        List<LabPatientWorkRequest> requestList = business.getLabPatQueue().getLabPatientRequestList();
-        for(LabPatientWorkRequest req: requestList){
+        List<DiagnosticsPatientWorkRequest> requestList = business.getLabPatQueue().getLabPatientRequestList();
+        for(DiagnosticsPatientWorkRequest req: requestList){
             if(req.getEnterprise().equals(enterprise.getName())){
                     Map<String,Date> map = req.getStatusMap();
                     String latestKey = "";

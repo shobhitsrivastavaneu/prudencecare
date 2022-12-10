@@ -33,7 +33,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
-import userinterface.InsuranceAdminWorkArea.ViewPolicyWorkAreaJPanel;
+import UserInterface.InsuranceAdminWorkArea.ViewPolicyWorkAreaJPanel;
 
 /**
  *

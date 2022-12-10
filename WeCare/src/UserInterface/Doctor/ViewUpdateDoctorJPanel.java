@@ -25,7 +25,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import userinterface.SystemAdminWorkArea.ManagePateintJPanel;
+import UserInterface.SystemAdminWorkArea.ManagePateintJPanel;
 
 /**
  *

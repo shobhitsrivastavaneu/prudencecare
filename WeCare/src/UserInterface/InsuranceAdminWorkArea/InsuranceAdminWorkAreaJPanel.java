@@ -30,10 +30,10 @@ import javax.swing.UIManager;
 import javax.swing.plaf.ColorUIResource;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
-import userinterface.AdministrativeRole.ManageEmployeeJPanel;
-import userinterface.AdministrativeRole.ManageOrganizationJPanel;
-import userinterface.AdministrativeRole.ManageUserAccountJPanel;
-import userinterface.PatientRole.CreatePatientJPanel;
+import UserInterface.AdministrativeRole.ManageEmployeeJPanel;
+import UserInterface.AdministrativeRole.ManageOrganizationJPanel;
+import UserInterface.AdministrativeRole.ManageUserAccountJPanel;
+import UserInterface.PatientRole.CreatePatientJPanel;
 
 /**
  *

@@ -12,8 +12,8 @@ import Business.Organization.Organization;
 import Business.Organization.DispensaryOrganization;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import userinterface.LabStaffRole.LabStaffWorkAreaJPanel;
-import userinterface.PharmaAdmin.PharmacyAdminPageJPanel;
+import UserInterface.LabStaffRole.LabStaffWorkAreaJPanel;
+import UserInterface.PharmaAdmin.PharmacyAdminPageJPanel;
 
 /**
  *
