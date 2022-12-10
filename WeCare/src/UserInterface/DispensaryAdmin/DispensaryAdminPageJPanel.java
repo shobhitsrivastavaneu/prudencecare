@@ -37,10 +37,10 @@ import userinterface.VaccineScientistRole.ViewVaccineJPanel;
  *
  * @author parvathypillai
  */
-public class PharmacyAdminPageJPanel extends javax.swing.JPanel {
+public class DispensaryAdminPageJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form PharmacyAdminPageJPanel
+     * Creates new form DispensaryAdminPageJPanel
      */
 
     JPanel userProcessContainer;
@@ -48,7 +48,7 @@ public class PharmacyAdminPageJPanel extends javax.swing.JPanel {
     EcoSystem business;
     UserAccount account;
     PharmacyOrganization organization;
-    public PharmacyAdminPageJPanel(JPanel userProcessContainer, UserAccount account, PharmacyOrganization organization, Enterprise enterprise,EcoSystem business) {
+    public DispensaryAdminPageJPanel(JPanel userProcessContainer, UserAccount account, PharmacyOrganization organization, Enterprise enterprise,EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.enterprise = enterprise;
@@ -317,7 +317,7 @@ public class PharmacyAdminPageJPanel extends javax.swing.JPanel {
 
     private void btnCompRptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCompRptActionPerformed
         // TODO add your handling code here:
-                PharmaReportJPanel pharmaJPanel=new PharmaReportJPanel(userProcessContainer,account,enterprise,business);
+                DispensaryReportJPanel pharmaJPanel=new DispensaryReportJPanel(userProcessContainer,account,enterprise,business);
         userProcessContainer.add("pharmaJPanel",pharmaJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);
@@ -325,7 +325,7 @@ public class PharmacyAdminPageJPanel extends javax.swing.JPanel {
 
     private void btnCheckTestsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCheckTestsActionPerformed
         // TODO add your handling code here:
-        PharmaRequestDispensaryJPanel medReqjPanel = new PharmaRequestDispensaryJPanel(userProcessContainer, account,enterprise,business);
+        DispensarySupplyJPanel medReqjPanel = new DispensarySupplyJPanel(userProcessContainer, account,enterprise,business);
         userProcessContainer.add("medReqjPanel", medReqjPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
@@ -333,7 +333,7 @@ public class PharmacyAdminPageJPanel extends javax.swing.JPanel {
 
     private void btnTestorsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTestorsActionPerformed
         // TODO add your handling code here:
-        PharmaDispensaryManagementJPanel mngMedJPanel=new PharmaDispensaryManagementJPanel(userProcessContainer,account,enterprise,business);
+        DispensaryManagementJPanel mngMedJPanel=new DispensaryManagementJPanel(userProcessContainer,account,enterprise,business);
         userProcessContainer.add("mngMedJPanel",mngMedJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);
@@ -341,7 +341,7 @@ public class PharmacyAdminPageJPanel extends javax.swing.JPanel {
 
     private void btnRespActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRespActionPerformed
         // TODO add your handling code here:
-        PharmaDispensaryRecordJPanel pharmaRecJPanel=new PharmaDispensaryRecordJPanel(userProcessContainer,enterprise,business);
+        DispensaryRecordJPanel pharmaRecJPanel=new DispensaryRecordJPanel(userProcessContainer,enterprise,business);
         userProcessContainer.add("pharmaRecJPanel",pharmaRecJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);

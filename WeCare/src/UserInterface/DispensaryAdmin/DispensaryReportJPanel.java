@@ -47,17 +47,17 @@ import org.jfree.data.general.DefaultPieDataset;
  *
  * @author parvathypillai
  */
-public class PharmaReportJPanel extends javax.swing.JPanel {
+public class DispensaryReportJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form PharmaReportJPanel
+     * Creates new form DispensaryReportJPanel
      */
     JPanel userProcessContainer;
     Enterprise enterprise;
     EcoSystem business;
     PharmacyOrganization organization;
     UserAccount account;
-    public PharmaReportJPanel(JPanel userProcessContainer, UserAccount account,Enterprise enterprise,EcoSystem business) {
+    public DispensaryReportJPanel(JPanel userProcessContainer, UserAccount account,Enterprise enterprise,EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.enterprise = enterprise;

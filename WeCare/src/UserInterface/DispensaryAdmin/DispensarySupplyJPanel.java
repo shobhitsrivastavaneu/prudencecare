@@ -42,7 +42,7 @@ import userinterface.VaccineScientistRole.ViewVaccineJPanel;
  *
  * @author parvathypillai
  */
-public class PharmaRequestDispensaryJPanel extends javax.swing.JPanel {
+public class DispensarySupplyJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form PharmacyAdminWorkAreaJPanel
@@ -53,7 +53,7 @@ public class PharmaRequestDispensaryJPanel extends javax.swing.JPanel {
     EcoSystem business;
     UserAccount account;
     PharmacyOrganization organization;
-    public PharmaRequestDispensaryJPanel(JPanel userProcessContainer, UserAccount account, Enterprise enterprise,EcoSystem business) {
+    public DispensarySupplyJPanel(JPanel userProcessContainer, UserAccount account, Enterprise enterprise,EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.enterprise = enterprise;
