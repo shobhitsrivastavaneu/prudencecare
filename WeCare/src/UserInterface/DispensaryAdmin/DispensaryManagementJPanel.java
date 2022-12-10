@@ -31,10 +31,10 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author parvathypillai
  */
-public class PharmaDispensaryManagementJPanel extends javax.swing.JPanel {
+public class DispensaryManagementJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form PharmaDispensaryManagementJPanel
+     * Creates new form DispensaryManagementJPanel
      */
     private JPanel userProcessContainer;
     private EcoSystem business;
@@ -43,7 +43,7 @@ public class PharmaDispensaryManagementJPanel extends javax.swing.JPanel {
     private PharmacyEnterprise enterprise;
     private String medName = "";
     private String cond;
-    public PharmaDispensaryManagementJPanel(JPanel userProcessContainer,UserAccount account,Enterprise enterprise,EcoSystem business ) {
+    public DispensaryManagementJPanel(JPanel userProcessContainer,UserAccount account,Enterprise enterprise,EcoSystem business ) {
         initComponents();
         this.business = business;
         this.userProcessContainer = userProcessContainer;
@@ -85,7 +85,7 @@ public class PharmaDispensaryManagementJPanel extends javax.swing.JPanel {
         supplyTable.setShowGrid(true);
        supplyTable.getTableHeader().setFont(new Font("SansSerif 14 Plain",Font.BOLD,16));
     }
-    public PharmaDispensaryManagementJPanel(JPanel userProcessContainer,Enterprise enterprise,EcoSystem business,String name,String cond) {
+    public DispensaryManagementJPanel(JPanel userProcessContainer,Enterprise enterprise,EcoSystem business,String name,String cond) {
         initComponents();
         this.business = business;
         this.userProcessContainer = userProcessContainer;

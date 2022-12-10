@@ -31,16 +31,16 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author parvathypillai
  */
-public class PharmaDispensaryRecordJPanel extends javax.swing.JPanel {
+public class DispensaryRecordJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form PharmaDispensaryRecordJPanel
+     * Creates new form DispensaryRecordJPanel
      */
     JPanel userProcessContainer;
     Enterprise enterprise;
     EcoSystem business;
     PharmacyOrganization organization;
-    public PharmaDispensaryRecordJPanel(JPanel userProcessContainer, Enterprise enterprise,EcoSystem business) {
+    public DispensaryRecordJPanel(JPanel userProcessContainer, Enterprise enterprise,EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.enterprise = enterprise;
