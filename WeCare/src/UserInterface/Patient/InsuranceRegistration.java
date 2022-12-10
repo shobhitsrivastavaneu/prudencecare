@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package UserInterface.Patient;
 
 import Business.EcoSystem;
@@ -41,7 +37,7 @@ import userinterface.InsuranceAdminWorkArea.ViewPolicyWorkAreaJPanel;
 
 /**
  *
- * @author Anjali
+ * @author rishabagarwal
  */
 public class InsuranceRegistration extends javax.swing.JPanel {
 
