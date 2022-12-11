@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package UserInterface.Admin;
 
 
@@ -17,21 +14,20 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author raunak
+ * @author rishabagarwal
  */
-public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
+public class EnterpriseAdminJPanel extends javax.swing.JPanel {
 
 
     /**
      * Creates new form ManageEnterpriseJPanel
      */
-    public ManageEnterpriseAdminJPanel() {
+    public EnterpriseAdminJPanel() {
         initComponents();
 
      
 
          jScrollPane1.getViewport().setBackground(Color.WHITE);
-//        UIManager.put("networkJTable.gridColor", new ColorUIResource(Color.BLACK));
        
         DefaultTableCellRenderer headerRenderer = new DefaultTableCellRenderer();
         headerRenderer.setBackground(Color.BLACK);
