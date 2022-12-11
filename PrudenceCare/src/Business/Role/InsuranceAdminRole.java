@@ -11,7 +11,7 @@ import Business.Organization.InsuranceAdminOrganization;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import userinterface.InsuranceAdminWorkArea.InsuranceAdminWorkAreaJPanel;
+import UserInterface.InsuranceAdminWorkArea.InsuranceAdminWorkAreaJPanel;
 
 /**
  *
