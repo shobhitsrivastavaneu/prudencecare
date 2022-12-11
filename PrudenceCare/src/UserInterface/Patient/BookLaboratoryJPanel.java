@@ -3,12 +3,14 @@ package UserInterface.Patient;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Enterprise.LabEnterprise;
+import Business.Enterprise.DiagnosticsEnterprise;
+import Business.Insurance.Insurance;
 import Business.InsurancePolicy.InsurancePolicy;
 import Business.Network.Network;
 import Business.Patient.Patient;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.LabPatientWorkRequest;
+import Business.WorkQueue.DiagnosticsPatientWorkRequest;
+import Enterprise.Enterprise;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Font;
@@ -40,7 +42,7 @@ public class BookLaboratoryJPanel extends javax.swing.JPanel {
     UserAccount account;
     Patient patient;
     String policy;
-    InsurancePolicy Insurancepolicy;
+    Insurance Insurancepolicy;
     public BookLaboratoryJPanel(JPanel userProcessContainer, UserAccount account,Enterprise enterprise,EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
@@ -53,17 +55,6 @@ public class BookLaboratoryJPanel extends javax.swing.JPanel {
     }
     public void populateLabs(){
         labComboBox.removeAllItems();
-//        for (Network network : business.getNetworkList()){
-//        for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()){
-//        String pwdRegex = ".*Laboratory.*";
-//            Pattern pwdPattern = Pattern.compile(pwdRegex);
-//            Matcher pwdCheck = pwdPattern.matcher(enterprise.toString());
-//            boolean checkPwd = pwdCheck.matches();
-//            if(checkPwd == TRUE){
-//                labComboBox.addItem(enterprise.toString());      
-//        }
-//        }
-//        }
 
     
          slotTable.getTableHeader().setFont(new Font("SansSerif 14 Plain",Font.BOLD,15));
@@ -107,7 +98,7 @@ public class BookLaboratoryJPanel extends javax.swing.JPanel {
         System.out.print(Insurancepolicy);
         policy = Insurancepolicy.toString();
         
-        for (InsurancePolicy a: business.getInsurancePolicyDirectory().getInsurancePolicyList())
+        for (Insurance a: business.getInsuranceDirectory().getInsurancePolicyList())
    {    
    
        if(a.getPolicyName().equalsIgnoreCase(policy))
@@ -123,14 +114,14 @@ public class BookLaboratoryJPanel extends javax.swing.JPanel {
     
     
     
-    public void populateServices(LabEnterprise e){
+    public void populateServices(DiagnosticsEnterprise e){
                 serviceComboBox.removeAllItems();
       List<String> services = e.getServices();
          for(String service : services){
           serviceComboBox.addItem(service);
          }
     }
-        public void populateSlots(LabEnterprise e){
+        public void populateSlots(DiagnosticsEnterprise e){
         DefaultTableModel model = (DefaultTableModel)slotTable.getModel();
         model.setRowCount(0);
       Map<String,String> slots = e.getTimeSlot();
@@ -148,7 +139,7 @@ public class BookLaboratoryJPanel extends javax.swing.JPanel {
          public void populateTestingTable(){
         DefaultTableModel model = (DefaultTableModel)labTestingTable.getModel();
         model.setRowCount(0);
-        for(LabPatientWorkRequest work : account.getLabPatientWorkQueue().getLabPatientRequestList()){
+        for(DiagnosticsPatientWorkRequest work : account.getLabPatientWorkQueue().getDiagnosticsPatientRequestList()){
                  Map<String,Date> map = work.getStatusMap();
                 String latestKey = "";
             for (Map.Entry<String,Date> mapEntry : map.entrySet()) {  
@@ -405,11 +396,11 @@ public class BookLaboratoryJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Please select a Laboratory to check slots and services!", "Warning", JOptionPane.WARNING_MESSAGE);
             return;
         }
-        LabEnterprise labEnterpise = null;
+        DiagnosticsEnterprise labEnterpise = null;
         for (Network network : business.getNetworkList()){
             for (Enterprise enterpriseCheck : network.getEnterpriseDirectory().getEnterpriseList()){
                 if(enterpriseCheck.getName().equals(labComboBox.getSelectedItem().toString())){
-                    labEnterpise = (LabEnterprise) enterpriseCheck;
+                    labEnterpise = (DiagnosticsEnterprise) enterpriseCheck;
                 }
             }
         }
@@ -436,7 +427,7 @@ public class BookLaboratoryJPanel extends javax.swing.JPanel {
         }
         String slotDate = (String) slotTable.getValueAt(rows, 0);
         String slotTime = (String) slotTable.getValueAt(rows, 1);
-        LabPatientWorkRequest request = new LabPatientWorkRequest();
+        DiagnosticsPatientWorkRequest request = new DiagnosticsPatientWorkRequest();
         request.setEnterprise(labComboBox.getSelectedItem().toString());
         request.setPatient(account);
         request.setSender(account);
@@ -450,7 +441,7 @@ public class BookLaboratoryJPanel extends javax.swing.JPanel {
         for (Network network : business.getNetworkList()){
             for (Enterprise enterpriseCheck : network.getEnterpriseDirectory().getEnterpriseList()){
                 if(enterpriseCheck.getName().equals(labComboBox.getSelectedItem().toString())){
-                    LabEnterprise e = (LabEnterprise) enterpriseCheck;
+                    DiagnosticsEnterprise e = (DiagnosticsEnterprise) enterpriseCheck;
                     Map<String,String> slots = e.getTimeSlot();
                     slots.put(slotDate+","+slotTime, "true");
                     e.setTimeSlot(slots);
@@ -467,11 +458,11 @@ public class BookLaboratoryJPanel extends javax.swing.JPanel {
         }
     account.getLabPatientWorkQueue().addLabPatientRequest(request);
         JOptionPane.showMessageDialog(null,"Booked Lab appointment successfully!", "Warning", JOptionPane.WARNING_MESSAGE);
-        LabEnterprise labEnterpise = null;
+        DiagnosticsEnterprise labEnterpise = null;
         for (Network network : business.getNetworkList()){
             for (Enterprise enterpriseCheck : network.getEnterpriseDirectory().getEnterpriseList()){
                 if(enterpriseCheck.getName().equals(labComboBox.getSelectedItem().toString())){
-                    labEnterpise = (LabEnterprise) enterpriseCheck;
+                    labEnterpise = (DiagnosticsEnterprise) enterpriseCheck;
                 }
             }
         }
