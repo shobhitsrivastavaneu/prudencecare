@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raunak
+ * @author Shobhit
  */
 public class DoctorOrganization {
 //    private String organizationType;
