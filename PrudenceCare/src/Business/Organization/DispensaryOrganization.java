@@ -4,8 +4,8 @@
  */
 package Business.Organization;
 
-import Business.Role.DeliveryManRole;
-import Business.Role.DoctorRole;
+import Business.Role.Rider;
+import Business.Role.Doctor;
 import Business.Role.DispensaryAdminRole;
 import Business.Role.Role;
 import java.util.ArrayList;
@@ -29,7 +29,7 @@ public class DispensaryOrganization extends Organization{
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
         roles.add(new DispensaryAdminRole());
-        roles.add(new DeliveryManRole());
+        roles.add(new Rider());
         return roles;
     }
      

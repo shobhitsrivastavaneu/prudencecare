@@ -8,7 +8,7 @@ import Business.EcoSystem;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
-import Business.Role.AdminRole;
+import Business.Role.Admin;
 import Business.Role.FDARole;
 import Business.Role.InsuranceAdminRole;
 import Business.Role.LabAdminRole;
@@ -407,7 +407,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
          
          }else if(enterprise.getEnterpriseType().equals(enterprise.getEnterpriseType().Hospital)){
            
-         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new AdminRole());  
+         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new Admin());  
          
         }else if(enterprise.getEnterpriseType().equals(enterprise.getEnterpriseType().DrugManufacturer)){
            
