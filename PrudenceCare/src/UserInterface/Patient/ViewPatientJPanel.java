@@ -19,7 +19,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import javax.swing.JPanel;
-import UserInterface.Admin.ManagePateintJPanel;
+import UserInterface.SystemAdmin.ManagePateintJPanel;
 /**
  *
  * @author rishabagarwal
