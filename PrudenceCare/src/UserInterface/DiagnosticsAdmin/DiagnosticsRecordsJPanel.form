@@ -3,7 +3,7 @@
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+      <Color blue="de" green="a3" red="31" type="rgb"/>
     </Property>
   </Properties>
   <AuxValues>
@@ -22,47 +22,55 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
+              <EmptySpace min="199" max="32767" attributes="0"/>
+              <Component id="backJButton" min="-2" pref="162" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="backJButton" alignment="0" min="-2" pref="162" max="-2" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lblAccount" min="-2" pref="193" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" pref="138" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="312" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="506" max="-2" attributes="0"/>
+                      <EmptySpace pref="341" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="lblAccount" min="-2" pref="193" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="472" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="27" max="32767" attributes="0"/>
               <Component id="jLabel2" min="-2" pref="790" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="184" max="-2" attributes="0"/>
           </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-              <Component id="jScrollPane2" min="-2" pref="1121" max="-2" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+              <Component id="jScrollPane2" min="-2" pref="1274" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="backJButton" min="-2" pref="44" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel2" pref="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="backJButton" min="-2" pref="44" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="136" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="55" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="lblAccount" min="-2" pref="15" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel2" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jScrollPane2" min="-2" pref="206" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="335" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="254" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -108,9 +116,13 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="24" style="1"/>
+          <Font name="Arial" size="24" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Lab-Record"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="DIAGNOSTICS RECORDS"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="backJButton">
@@ -128,10 +140,13 @@
     <Component class="javax.swing.JLabel" name="lblAccount">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="33" type="rgb"/>
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="18" style="1"/>
+          <Font name="Arial" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Enterprise:"/>
         <Property name="verticalTextPosition" type="int" value="3"/>
