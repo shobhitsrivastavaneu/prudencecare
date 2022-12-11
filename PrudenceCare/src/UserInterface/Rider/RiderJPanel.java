@@ -6,12 +6,16 @@
 package UserInterface.Rider;
 
 import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
+import Enterprise.Enterprise;
 import Business.Essentials.Medicine;
 import Business.Organization.DiagnosticsOrganization;
 import Business.Organization.DispensaryOrganization;
 import Business.UserAccount.UserAccount;
+<<<<<<< Updated upstream
 import Business.WorkQueue.DiagnosticsPatientWorkRequest; ////////
+=======
+import Business.WorkQueue.DiagnosticsPatientWorkRequest;
+>>>>>>> Stashed changes
 import Business.WorkQueue.MedicineWorkRequest;
 import java.awt.Font;
 import java.util.Date;
