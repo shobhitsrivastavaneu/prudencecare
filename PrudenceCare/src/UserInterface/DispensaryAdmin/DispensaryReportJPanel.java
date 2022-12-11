@@ -8,13 +8,13 @@ package UserInterface.DispensaryAdmin;
 import UserInterface.PharmaAdmin.*;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Enterprise.LabEnterprise;
-import Business.Enterprise.PharmacyEnterprise;
+import Business.Enterprise.DiagnosticsEnterprise;
+import Business.Enterprise.DispensaryEnterprise;
 import Business.Essentials.Medicine;
-import Business.Organization.PharmacyOrganization;
+import Business.Organization.DispensaryOrganization;
 import Business.Patient.Patient;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.LabPatientWorkRequest;
+import Business.WorkQueue.DispensaryPatientWorkRequest;
 import Business.WorkQueue.PharmaWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Color;
@@ -55,7 +55,7 @@ public class DispensaryReportJPanel extends javax.swing.JPanel {
     JPanel userProcessContainer;
     Enterprise enterprise;
     EcoSystem business;
-    PharmacyOrganization organization;
+    DispensaryOrganization organization;
     UserAccount account;
     public DispensaryReportJPanel(JPanel userProcessContainer, UserAccount account,Enterprise enterprise,EcoSystem business) {
         initComponents();
@@ -104,8 +104,8 @@ public class DispensaryReportJPanel extends javax.swing.JPanel {
         public void populateAllRecords(){
                DefaultTableModel model = (DefaultTableModel)respTable.getModel();
         model.setRowCount(0);
-        List<PharmaWorkRequest> requestList = business.getPharmaQueue().getPharmaList();
-        for(PharmaWorkRequest req: requestList){
+        List<DispensaryWorkRequest> requestList = business.getPharmaQueue().getDispensaryList();
+        for(DispensaryWorkRequest req: requestList){
             if(req.getEnterprise().equals(enterprise.getName())){
                             String medList = "";
                 Map<Medicine,Integer> medMap= req.getMedList();
@@ -145,7 +145,7 @@ public class DispensaryReportJPanel extends javax.swing.JPanel {
             }
         }
     }
-       public void populateTimeline(PharmaWorkRequest req){
+       public void populateTimeline(DispensaryWorkRequest req){
        DefaultTableModel model = (DefaultTableModel)timelineTable.getModel();
         model.setRowCount(0);
            Map<String,Date> map = req.getStatusMap();
@@ -163,11 +163,11 @@ public class DispensaryReportJPanel extends javax.swing.JPanel {
               }
     public void populateCovidCases(){
         Map<String,Integer> covMed = new HashMap<String,Integer>();
-        PharmacyEnterprise pharmaEnterprise = (PharmacyEnterprise) enterprise;
+        DispensaryEnterprise pharmaEnterprise = (DispensaryEnterprise) enterprise;
         for(Medicine med : pharmaEnterprise.getMedicineCatalog().getMedicineList()){
             int medCount =0;
             if(med.getCondition().equalsIgnoreCase("covid")){
-                for(PharmaWorkRequest request: business.getPharmaQueue().getPharmaList()){
+                for(DispensaryWorkRequest request: business.getPharmaQueue().getDispensaryList()){
                     Map<Medicine,Integer> medMap = request.getMedList();
                     for (Map.Entry<Medicine,Integer> medicine : medMap.entrySet()) {
                          if(medicine.getKey().getName().equals(med.getName())){
@@ -205,10 +205,10 @@ public class DispensaryReportJPanel extends javax.swing.JPanel {
     public void populateNewMedList(){
         DefaultTableModel model = (DefaultTableModel)newTable.getModel();
         model.setRowCount(0);
-        PharmacyEnterprise pharmaEnterprise = (PharmacyEnterprise) enterprise;
-         Collections.sort(pharmaEnterprise.getMedicineCatalog().getMedicineList(),dateComparator);
+        DispensaryEnterprise dispensaryEnterprise = (DispensaryEnterprise) enterprise;
+         Collections.sort(dispensaryEnterprise.getMedicineCatalog().getMedicineList(),dateComparator);
 
-          for(Medicine med : pharmaEnterprise.getMedicineCatalog().getMedicineList()){
+          for(Medicine med : dispensaryEnterprise.getMedicineCatalog().getMedicineList()){
                  Object row[] = new Object[8];
                  row[0] = med.getName();
                  row[1] = med.getCondition();
@@ -225,7 +225,7 @@ public class DispensaryReportJPanel extends javax.swing.JPanel {
         int count76to90=0;
         int count90toAbove=0;
         
-        for(PharmaWorkRequest request : business.getPharmaQueue().getPharmaList()){
+        for(DispensaryWorkRequest request : business.getPharmaQueue().getDispensaryList()){
             int age = 0;
            for(Patient p: business.getPatientDirectory().getpatientlist()){
                if(p.getUserAccount().equals(request.getCust().getUsername())){
@@ -276,10 +276,10 @@ public class DispensaryReportJPanel extends javax.swing.JPanel {
 }
     public void populateMedicineGraph(){
     DefaultCategoryDataset category = new DefaultCategoryDataset();
-    PharmacyEnterprise e = (PharmacyEnterprise) enterprise;
+    DispensaryEnterprise e = (DispensaryEnterprise) enterprise;
     for(Medicine medicine: e.getMedicineCatalog().getMedicineList()){
         int count = 0;
-        for(PharmaWorkRequest req: business.getPharmaQueue().getPharmaList()){
+        for(DispensaryWorkRequest req: business.getPharmaQueue().getDispensaryList()){
                     Map<Medicine,Integer> medMap = req.getMedList();
                     for (Map.Entry<Medicine,Integer> med : medMap.entrySet()) {
                          if(med.getKey().getName().equals(medicine.getName())){
@@ -303,10 +303,10 @@ public class DispensaryReportJPanel extends javax.swing.JPanel {
 }
    public void populateConditionMedDemands(){
     DefaultCategoryDataset category = new DefaultCategoryDataset();
-    PharmacyEnterprise e = (PharmacyEnterprise) enterprise;
+    DispensaryEnterprise e = (DispensaryEnterprise) enterprise;
     for(Medicine medicine: e.getMedicineCatalog().getMedicineList()){
         int count = 0;
-        for(PharmaWorkRequest req: business.getPharmaQueue().getPharmaList()){
+        for(DispensaryWorkRequest req: business.getPharmaQueue().getDispensaryList()){
                     Map<Medicine,Integer> medMap = req.getMedList();
                     for (Map.Entry<Medicine,Integer> med : medMap.entrySet()) {
                          if(med.getKey().getName().equals(medicine.getName())){
@@ -340,8 +340,8 @@ public class DispensaryReportJPanel extends javax.swing.JPanel {
         int feverCount=0;
         int entCount=0;
         int painCount=0;
-    PharmacyEnterprise e = (PharmacyEnterprise) enterprise;
-    for(PharmaWorkRequest req: business.getPharmaQueue().getPharmaList()){
+    DispensaryEnterprise e = (DispensaryEnterprise) enterprise;
+    for(DispensaryWorkRequest req: business.getPharmaQueue().getDispensaryList()){
                     Map<Medicine,Integer> medMap = req.getMedList();
                     for (Map.Entry<Medicine,Integer> med : medMap.entrySet()) {
                          if(med.getKey().getCondition().equalsIgnoreCase("Covid")){
@@ -877,9 +877,9 @@ public class DispensaryReportJPanel extends javax.swing.JPanel {
                 return;
             }
 
-            PharmaWorkRequest pharma= (PharmaWorkRequest)respTable.getValueAt(selectedRow, 0);
+            DispensaryWorkRequest pharma= (DispensaryWorkRequest)respTable.getValueAt(selectedRow, 0);
 
-            populateTimeline(pharma);
+            populateTimeline(dispensary);
         }
     }//GEN-LAST:event_jTabbedPane2MouseClicked
 
