@@ -8,10 +8,10 @@ package UserInterface.Rider;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Essentials.Medicine;
-import Business.Organization.LaboratoryOrganization;
+import Business.Organization.DiagnosticsOrganization;
 import Business.Organization.DispensaryOrganization;
 import Business.UserAccount.UserAccount;
-import Business.WorkQueue.LabPatientWorkRequest;
+import Business.WorkQueue.DiagnosticsPatientWorkRequest; ////////
 import Business.WorkQueue.MedicineWorkRequest;
 import java.awt.Font;
 import java.util.Date;
