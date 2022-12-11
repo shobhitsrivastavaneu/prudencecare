@@ -3,21 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UserInterface.InsuranceAdminWorkArea;
+package UserInterface.InsuranceAdmin;
 
 import Business.Patient.Patient;
 import javax.swing.DefaultListModel;
 
 /**
  *
- * @author Anjali
+ * @author Shobit
  */
-public class PatientsinPolicyWorkAreaJPanel extends javax.swing.JPanel {
+public class PatientsinPolicyMainAreaJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form PatientsinPolicyWorkAreaJPanel
      */
-    public PatientsinPolicyWorkAreaJPanel() {
+    public PatientsinPolicyMainAreaJPanel() {
         initComponents();
     }
     
