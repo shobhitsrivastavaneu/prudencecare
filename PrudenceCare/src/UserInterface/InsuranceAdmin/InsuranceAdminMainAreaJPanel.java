@@ -1,4 +1,4 @@
-package UserInterface.InsuranceAdminWorkArea;
+package UserInterface.InsuranceAdmin;
 
 import Business.EcoSystem;
 import Business.Employee.Employee;
@@ -39,10 +39,10 @@ import UserInterface.PatientRole.CreatePatientJPanel;
  *
  * @author Shobhit
  */
-public class InsuranceAdminWorkAreaJPanel extends javax.swing.JPanel {
+public class InsuranceAdminMainAreaJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form InsuranceAdminWorkAreaJPanel
+     * Creates new form InsuranceAdminMainAreaJPanel
      */
 
     JPanel userProcessContainer;
@@ -51,7 +51,7 @@ public class InsuranceAdminWorkAreaJPanel extends javax.swing.JPanel {
     EcoSystem ecosystem;
     InsuranceAdminOrganization insuranceOrganization;
    
-    public InsuranceAdminWorkAreaJPanel(JPanel userProcessContainer, UserAccount account, InsuranceAdminOrganization insuranceOrganization, Enterprise enterprise,EcoSystem ecosystem) {
+    public InsuranceAdminMainAreaJPanel(JPanel userProcessContainer, UserAccount account, InsuranceAdminOrganization insuranceOrganization, Enterprise enterprise,EcoSystem ecosystem) {
        
         initComponents();
        
@@ -734,7 +734,7 @@ public class InsuranceAdminWorkAreaJPanel extends javax.swing.JPanel {
 
     private void btnCreatePolicyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreatePolicyActionPerformed
         // TODO add your handling code here:
-        CreatePolicyWorkAreaJPanel cpeaj = new CreatePolicyWorkAreaJPanel(userProcessContainer, enterprise,ecosystem,account);
+        CreatePolicyMainAreaJPanel cpeaj = new CreatePolicyMainAreaJPanel(userProcessContainer, enterprise,ecosystem,account);
         userProcessContainer.add("CreatePolicyWorkAreaJPanel", cpeaj);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);

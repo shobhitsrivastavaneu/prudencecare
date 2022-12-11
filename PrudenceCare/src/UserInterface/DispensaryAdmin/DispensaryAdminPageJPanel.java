@@ -5,17 +5,17 @@
  */
 package UserInterface.DispensaryAdmin;
 
-import UserInterface.PharmaAdmin.*;
+import UserInterface.DispensaryAdmin.*;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Enterprise.PharmacyEnterprise;
+import Business.Enterprise.DispensaryEnterprise;
 import Business.Essentials.Medicine;
 import Business.Organization.Organization;
-import Business.Organization.PharmacyOrganization;
+import Business.Organization.DispensaryOrganization;
 import Business.UserAccount.UserAccount;
-import Business.Vaccine.Vaccine;
-import Business.WorkQueue.PharmaWorkRequest;
-import Business.WorkQueue.VaccineWorkRequest;
+//import Business.Vaccine.Vaccine;
+import Business.WorkQueue.DispensaryWorkRequest;
+//import Business.WorkQueue.VaccineWorkRequest;
 import java.awt.CardLayout;
 import java.util.Collections;
 import java.util.Comparator;
@@ -27,11 +27,11 @@ import java.util.Map;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
-import UserInterface.AdministrativeRole.ManageEmployeeJPanel;
-import UserInterface.AdministrativeRole.ManageOrgJPanel;
-import UserInterface.AdministrativeRole.ManageOrganizationJPanel;
-import UserInterface.AdministrativeRole.ManageUserAccountJPanel;
-import UserInterface.VaccineScientistRole.ViewVaccineJPanel;
+import UserInterface.Admin.ManageEmployeeJPanel;
+import UserInterface.Admin.ManageOrgJPanel;
+import UserInterface.Admin.ManageOrganizationJPanel;
+import UserInterface.Admin.ManageUserAccountJPanel;
+//import UserInterface.VaccineScientistRole.ViewVaccineJPanel;
 
 /**
  *
@@ -47,8 +47,8 @@ public class DispensaryAdminPageJPanel extends javax.swing.JPanel {
     Enterprise enterprise;
     EcoSystem business;
     UserAccount account;
-    PharmacyOrganization organization;
-    public DispensaryAdminPageJPanel(JPanel userProcessContainer, UserAccount account, PharmacyOrganization organization, Enterprise enterprise,EcoSystem business) {
+    DispensaryOrganization organization;
+    public DispensaryAdminPageJPanel(JPanel userProcessContainer, UserAccount account, DispensaryOrganization organization, Enterprise enterprise,EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.enterprise = enterprise;
@@ -309,7 +309,7 @@ public class DispensaryAdminPageJPanel extends javax.swing.JPanel {
 
     private void manageOrganizationJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageOrganizationJButtonActionPerformed
 
-        ManageOrgJPanel manageOrgJPanel = new ManageOrgJPanel(userProcessContainer,account,organization,enterprise,business,"Pharmacy Organization");
+        ManageOrgJPanel manageOrgJPanel = new ManageOrgJPanel(userProcessContainer,account,organization,enterprise,business,"Dispensary Organization");
         userProcessContainer.add("manageOrgJPanel", manageOrgJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
@@ -318,7 +318,7 @@ public class DispensaryAdminPageJPanel extends javax.swing.JPanel {
     private void btnCompRptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCompRptActionPerformed
         // TODO add your handling code here:
                 DispensaryReportJPanel pharmaJPanel=new DispensaryReportJPanel(userProcessContainer,account,enterprise,business);
-        userProcessContainer.add("pharmaJPanel",pharmaJPanel);
+        userProcessContainer.add("dispensaryJPanel",pharmaJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);
     }//GEN-LAST:event_btnCompRptActionPerformed
@@ -341,8 +341,8 @@ public class DispensaryAdminPageJPanel extends javax.swing.JPanel {
 
     private void btnRespActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRespActionPerformed
         // TODO add your handling code here:
-        DispensaryRecordJPanel pharmaRecJPanel=new DispensaryRecordJPanel(userProcessContainer,enterprise,business);
-        userProcessContainer.add("pharmaRecJPanel",pharmaRecJPanel);
+        DispensaryRecordJPanel dispensaryRecordJPanel=new DispensaryRecordJPanel(userProcessContainer,enterprise,business);
+        userProcessContainer.add("dispensaryRecordJPanel",dispensaryRecordJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);
     }//GEN-LAST:event_btnRespActionPerformed
