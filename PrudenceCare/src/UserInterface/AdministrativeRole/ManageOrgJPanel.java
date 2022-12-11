@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit
  */
 public class ManageOrgJPanel extends javax.swing.JPanel {
 

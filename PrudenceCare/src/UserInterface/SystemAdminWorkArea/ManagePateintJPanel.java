@@ -24,7 +24,7 @@ import userinterface.PatientRole.ViewPatientJPanel;
 
 /**
  *
- * @author sayu
+ * @author Shobhit
  */
 public class ManagePateintJPanel extends javax.swing.JPanel {
 
