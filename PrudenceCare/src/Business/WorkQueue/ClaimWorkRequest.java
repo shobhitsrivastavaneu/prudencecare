@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
  *
- * @author Anjali
+ * @author Shobhit
  */
 public class ClaimWorkRequest {
     
