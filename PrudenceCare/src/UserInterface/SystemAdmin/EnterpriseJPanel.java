@@ -1,5 +1,5 @@
 
-package UserInterface.Admin;
+package UserInterface.SystemAdmin;
 
 import Business.EcoSystem;
 import Business.Network.Network;
@@ -106,6 +106,7 @@ public class EnterpriseJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(238, 233, 234));
 
+        enterpriseJTable.setBackground(new java.awt.Color(182, 220, 237));
         enterpriseJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -141,6 +142,7 @@ public class EnterpriseJPanel extends javax.swing.JPanel {
         enterpriseTypeJComboBox.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         enterpriseTypeJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
+        submitJButton.setBackground(new java.awt.Color(49, 193, 255));
         submitJButton.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         submitJButton.setText("Submit");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -149,6 +151,7 @@ public class EnterpriseJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnRem.setBackground(new java.awt.Color(49, 193, 255));
         btnRem.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         btnRem.setText("Delete Enterprise");
         btnRem.addActionListener(new java.awt.event.ActionListener() {
@@ -157,7 +160,7 @@ public class EnterpriseJPanel extends javax.swing.JPanel {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(0, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(49, 163, 222));
 
         backJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/back_to_50px_1.png"))); // NOI18N
         backJButton.setBorder(null);
@@ -195,7 +198,7 @@ public class EnterpriseJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(391, Short.MAX_VALUE)
+                .addContainerGap(407, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 523, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(347, 347, 347))
             .addGroup(layout.createSequentialGroup()

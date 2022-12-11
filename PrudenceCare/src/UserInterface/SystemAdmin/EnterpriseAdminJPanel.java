@@ -1,7 +1,18 @@
 
-package UserInterface.Admin;
+package UserInterface.SystemAdmin;
 
-
+import Business.EcoSystem;
+import Business.Employee.Employee;
+import Enterprise.Enterprise;
+import Business.Network.Network;
+import Business.Role.Admin;
+import Business.Role.FDARole;
+import Business.Role.InsuranceAdmin;
+import Business.Role.DiagnosticsAdmin;
+import Business.Role.ManufactureAdmin;
+import Business.Role.DispensaryAdmin;
+import Business.Role.VaccineAdminRole;
+import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -18,14 +29,17 @@ import javax.swing.table.DefaultTableModel;
  */
 public class EnterpriseAdminJPanel extends javax.swing.JPanel {
 
+    private JPanel userProcessContainer;
+    private EcoSystem system;
 
     /**
-     * Creates new form ManageEnterpriseJPanel
+     * Creates new form EnterpriseJPanel
      */
-    public EnterpriseAdminJPanel() {
+    public EnterpriseAdminJPanel(JPanel userProcessContainer, EcoSystem system) {
         initComponents();
 
-     
+        this.userProcessContainer = userProcessContainer;
+        this.system = system;
 
          jScrollPane1.getViewport().setBackground(Color.WHITE);
        
@@ -39,13 +53,48 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         
         enterpriseJTable.setShowGrid(true);
         
-       
+        populateTable();
+        populateNetworkComboBox();
     }
 
-   
+    private void populateTable() {
+        DefaultTableModel model = (DefaultTableModel) enterpriseJTable.getModel();
 
- 
+        model.setRowCount(0);
+        for (Network network : system.getNetworkList()) {
+            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                for (UserAccount userAccount : enterprise.getUserAccountDirectory().getUserAccountList()) {
+                    Object[] row = new Object[3];
+                    row[0] = enterprise;
+                    row[1] = network;
+                    row[2] = userAccount;
 
+                    model.addRow(row);
+                }
+            }
+        }
+    }
+
+    private void populateNetworkComboBox(){
+        networkJComboBox.removeAllItems();
+         networkJComboBox.addItem("");
+        for (Network network : system.getNetworkList()){
+            networkJComboBox.addItem(network);
+        }
+    }
+    
+    private void populateEnterpriseComboBox(Network network){
+        enterpriseJComboBox.removeAllItems();
+         enterpriseJComboBox.addItem("");
+        for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()){
+            enterpriseJComboBox.addItem(enterprise);
+        }
+        
+    }
+        private void populateEnterpriseComboBox(String net){
+        enterpriseJComboBox.removeAllItems();
+        
+    }
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -76,6 +125,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(238, 233, 234));
 
+        enterpriseJTable.setBackground(new java.awt.Color(182, 220, 237));
         enterpriseJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -121,6 +171,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
             }
         });
 
+        submitJButton.setBackground(new java.awt.Color(49, 193, 255));
         submitJButton.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         submitJButton.setText("Submit");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -139,6 +190,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
 
         passwordJPasswordField.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
 
+        btnRem.setBackground(new java.awt.Color(49, 193, 255));
         btnRem.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         btnRem.setText("Remove User");
         btnRem.addActionListener(new java.awt.event.ActionListener() {
@@ -146,8 +198,6 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
                 btnRemActionPerformed(evt);
             }
         });
-
-        jPanel1.setBackground(new java.awt.Color(0, 255, 255));
 
         backJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/back_to_50px_1.png"))); // NOI18N
         backJButton.setBorder(null);
@@ -208,7 +258,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
                         .addGap(46, 46, 46)
                         .addComponent(btnRem))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(389, 389, 389)
+                        .addGap(351, 351, 351)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 523, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -248,28 +298,177 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(submitJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnRem, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(109, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void networkJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networkJComboBoxActionPerformed
-       
+        try{
+        Network network = (Network) networkJComboBox.getSelectedItem();
+        if (network != null){
+            populateEnterpriseComboBox(network);
+        }
+        }catch(ClassCastException e){
+           populateEnterpriseComboBox(""); 
+        }catch(Exception e){
+            populateEnterpriseComboBox("");  
+        }
         
         
     }//GEN-LAST:event_networkJComboBoxActionPerformed
 
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
-      
+         if(networkJComboBox.getSelectedItem().toString().equals("")){
+           JOptionPane.showMessageDialog(null, "Please select Network!");
+            return;              
+        }
+        if(enterpriseJComboBox.getSelectedItem().toString().equals("")){
+           JOptionPane.showMessageDialog(null, "Please select Enterprise!");
+            return;              
+        }
+        Network network = (Network) networkJComboBox.getSelectedItem();
+        Enterprise enterprise = (Enterprise) enterpriseJComboBox.getSelectedItem();
+        
+        String username = usernameJTextField.getText();
+        if(usernameJTextField.getText().equals("") || passwordJPasswordField.getPassword().equals("") || nameJTextField.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Username, Password and Name is Mandatory to create Admin account!");
+            return;             
+        }
+        for(Network n: system.getNetworkList()){
+        for(Enterprise e: n.getEnterpriseDirectory().getEnterpriseList()){
+           for(UserAccount ua:e.getUserAccountDirectory().getUserAccountList()){
+            if(ua.getUsername().equals(username)){
+          JOptionPane.showMessageDialog(null, "Username already exists!");
+            return;    
+            }
+        } 
+        }
+        }
+        
+        String password = String.valueOf(passwordJPasswordField.getPassword());
+        String name = nameJTextField.getText();
+        
+        Employee employee = enterprise.getEmployeeDirectory().createEmployee(name);
+         boolean foundAdmin = false;
+        for(UserAccount ua:enterprise.getUserAccountDirectory().getUserAccountList()){
+               if(ua.getRole().toString().contains("Admin")){
+                   foundAdmin = true;
+               }
+           }
+           if(foundAdmin == true){
+                       JOptionPane.showMessageDialog(null, "Enterprise selected already has an Admin!");
+            return;  
+        } 
+       String usernamePattern = "((?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{7})";
+            Pattern userPat = Pattern.compile(usernamePattern);
+            Matcher checkUser = userPat.matcher(username);
+            boolean userMatch = checkUser.matches();  
+             System.out.println(userMatch);
+             if(userMatch == false){
+                          JOptionPane.showMessageDialog(null, "UserName pattern invalid:\nShould be 7 characters only\nMust include one UPPER CASE character,one lower case character and one digit");
+            return;               
+             }
+    
+
+        String pwdRegex = "((?=.*[a-z])(?=.*[0-9])(?=.*[$*#&])(?=.*[A-Z]).{7})";
+                Pattern pwdPattern = Pattern.compile(pwdRegex);
+                Matcher pwdCheck = pwdPattern.matcher(password);
+                boolean checkPwd = pwdCheck.matches();
+               System.out.println(checkPwd);
+             if(checkPwd == false){
+                          JOptionPane.showMessageDialog(null, "Password pattern invalid! \nNeeds to be 7 characters long and should have atleast:\nOne UPPER CASE character\nOne lower case character\nOne digit\nOne special character[$*#&]");
+            return;               
+             }
+        if(enterprise.getEnterpriseType().getValue().equals("Pharmacy")){
+            
+         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new PharmacyAdminRole());               
+        
+        }else if(enterprise.getEnterpriseType().getValue().equals("Diagnostics")){
+         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new DiagnosticsAdmin());           
+
+        }else if(enterprise.getEnterpriseType().getValue().equals("VaccineCompany")){
+         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new VaccineAdminRole());           
+        
+         }else if(enterprise.getEnterpriseType().equals(enterprise.getEnterpriseType().Insurance)){
+         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new InsuranceAdminRole());  
+         
+         }else if(enterprise.getEnterpriseType().equals(enterprise.getEnterpriseType().FDA)){
+         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new FDARole());  
+         
+         }else if(enterprise.getEnterpriseType().equals(enterprise.getEnterpriseType().Hospital)){
+           
+         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new AdminRole());  
+         
+        }else if(enterprise.getEnterpriseType().equals(enterprise.getEnterpriseType().DrugManufacturer)){
+           
+         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new ManufactureAdminRole());  
+         
+        }
+         JOptionPane.showMessageDialog(null, "Admin account added successfully!");
+        populateTable();
+        usernameJTextField.setText("");
+        passwordJPasswordField.setText("");
+        nameJTextField.setText("");
         
     }//GEN-LAST:event_submitJButtonActionPerformed
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
-  
+       String adminMissing = "";
+        for(Network n: system.getNetworkList()){
+        for(Enterprise e: n.getEnterpriseDirectory().getEnterpriseList()){
+            boolean foundAdmin = false;
+           for(UserAccount ua:e.getUserAccountDirectory().getUserAccountList()){
+               if(ua.getRole().toString().contains("Admin")){
+                   foundAdmin = true;
+               }
+           }
+           if(foundAdmin == false){
+              adminMissing +=e.getName()+" ";
+        } 
+        }
+        }
+        
+        if(!adminMissing.equals("")){
+          int confirmed = JOptionPane.showConfirmDialog(null, "Below Enterprises do not have Admin accounts set up:\n"+adminMissing+"\n Are you sure you want to exit?","Confirm Exit",JOptionPane.YES_NO_OPTION);
+            if(confirmed == JOptionPane.YES_OPTION){          
+        
+        userProcessContainer.remove(this);
+         Component[] componentArray = userProcessContainer.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        SystemAdminJPanel sysAdminwjp = (SystemAdminJPanel) component;
+        sysAdminwjp.populateTree();
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+            }
+        }else{
+            userProcessContainer.remove(this);
+         Component[] componentArray = userProcessContainer.getComponents();
+        Component component = componentArray[componentArray.length - 1];
+        SystemAdminJPanel sysAdminwjp = (SystemAdminJPanel) component;
+        sysAdminwjp.populateTree();
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);    
+        }
     }//GEN-LAST:event_backJButtonActionPerformed
 
     private void btnRemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemActionPerformed
         // TODO add your handling code here:
-       
+        int selectedRow = enterpriseJTable.getSelectedRow();
+        if(selectedRow<0){
+            JOptionPane.showMessageDialog(null, "Please select an admin row to remove!", "Warning", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        
+        int confirmed = JOptionPane.showConfirmDialog(null, "Are you Sure you want to delete the admin account?","Confirm Delete",JOptionPane.YES_NO_OPTION);
+            if(confirmed == JOptionPane.YES_OPTION){
+                Enterprise enterprise= (Enterprise)enterpriseJTable.getValueAt(selectedRow, 0);
+                UserAccount account= (UserAccount)enterpriseJTable.getValueAt(selectedRow, 2);
+                enterprise.getUserAccountDirectory().removeUserAccount(account);
+//                Network networkName = (Network)enterpriseJTable.getValueAt(selectedRow, 1);
+//                        networkName.getEnterpriseDirectory().removeEnterprise(enterprise);
+                        JOptionPane.showMessageDialog(null, "Enterprise admin removed successfully!", "Information", JOptionPane.INFORMATION_MESSAGE);
+            }
+            populateTable();
     }//GEN-LAST:event_btnRemActionPerformed
 
     private void enterpriseJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterpriseJComboBoxActionPerformed
