@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit
  */
 public class LabStaffWorkAreaJPanel extends javax.swing.JPanel {
 
