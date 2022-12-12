@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author rishabagarwal
+ * @author Shobhit
  */
 //Pharmacy sends demand requests to manufacturing unit using this queue.
 public class DrugDemandQueue {
