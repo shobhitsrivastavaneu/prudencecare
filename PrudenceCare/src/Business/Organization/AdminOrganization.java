@@ -4,16 +4,16 @@
  */
 package Business.Organization;
 
-import Business.Role.Admin;
+import Business.Role.AdminRole;
 import Business.Role.AmbulanceDriverRole;
-import Business.Role.Doctor;
+import Business.Role.DoctorRole;
 import Business.Role.HospitalStaffRole;
 import Business.Role.Role;
 import java.util.ArrayList;
 
 /**
  *
- * @author parvathypillai
+ * @author rishabagarwal
  */
 public class AdminOrganization extends Organization{
 
@@ -30,8 +30,8 @@ public class AdminOrganization extends Organization{
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new Admin());
-        roles.add(new Doctor());
+        roles.add(new AdminRole());
+        roles.add(new DoctorRole());
         roles.add(new HospitalStaffRole());
         roles.add(new AmbulanceDriverRole());
         return roles;

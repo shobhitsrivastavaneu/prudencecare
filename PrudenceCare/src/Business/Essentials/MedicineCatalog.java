@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author parvathypillai
+ * @author rishabagarwal
  */
 public class MedicineCatalog {
     

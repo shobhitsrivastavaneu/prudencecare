@@ -1,8 +1,12 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Business.Patient;
 
 import Business.Employee.Employee;
-import Business.Insurance.Insurance;
+import Business.InsurancePolicy.InsurancePolicy;
 import Business.Organization.Organization;
 import Business.Role.PatientRole;
 import Business.Role.Role;
@@ -12,7 +16,7 @@ import java.util.Date;
 
 /**
  *
- * @author rishabagarwal
+ * @author sayu
  */
 
 public class Patient extends Employee {
@@ -62,7 +66,7 @@ public class Patient extends Employee {
     private String healthOther;
     private String condition;
     private String photograph;
-    private Insurance insurance;
+    private InsurancePolicy insurance;
     private String userName;
     private int adultNo;
     private int childrenNo;
@@ -112,11 +116,11 @@ public class Patient extends Employee {
         return userName;
     }
 
-    public Insurance getInsurance() {
+    public InsurancePolicy getInsurance() {
         return insurance;
     }
 
-    public void setInsurance(Insurance insurance) {
+    public void setInsurance(InsurancePolicy insurance) {
         this.insurance = insurance;
     }
 

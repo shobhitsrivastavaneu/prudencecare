@@ -250,7 +250,7 @@ public String getSpecialization() {
     public void setPhotograph(String photograph) {
         this.photograph = photograph;
     }
-    
+      @Override
     public String toString() {
         return name;
     }

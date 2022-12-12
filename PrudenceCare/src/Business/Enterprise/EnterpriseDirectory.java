@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Business.Enterprise;
 
 import Business.Organization.OrganizationDirectory;
@@ -5,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author rishabagarwal
+ * @author MyPC1
  */
 public class EnterpriseDirectory {
     private ArrayList<Enterprise> enterpriseList;
@@ -34,12 +39,12 @@ public class EnterpriseDirectory {
             enterprise=new VaccineEnterprise(name);
             enterpriseList.add(enterprise);
         }
-        if(type==Enterprise.EnterpriseType.Diagnostics){
-            enterprise=new DiagnosticsEnterprise(name);
+        if(type==Enterprise.EnterpriseType.Laboratory){
+            enterprise=new LabEnterprise(name);
             enterpriseList.add(enterprise);
         }
-        if(type==Enterprise.EnterpriseType.Dispensary){
-            enterprise=new DispensaryEnterprise(name);
+        if(type==Enterprise.EnterpriseType.Pharmacy){
+            enterprise=new PharmacyEnterprise(name);
             enterpriseList.add(enterprise);
         }
           if(type==Enterprise.EnterpriseType.Insurance){
@@ -51,7 +56,7 @@ public class EnterpriseDirectory {
             enterpriseList.add(enterprise);
         }
         if(type==Enterprise.EnterpriseType.DrugManufacturer){
-            enterprise=new MedicineManufacturingEnterprise(name);
+            enterprise=new DrugManufacturingEnterprise(name);
             enterpriseList.add(enterprise);
         }        
         return enterprise;

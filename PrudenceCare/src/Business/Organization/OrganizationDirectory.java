@@ -1,3 +1,7 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Business.Organization;
 
 import Business.Organization.Organization.Type;
@@ -21,8 +25,8 @@ public class OrganizationDirectory {
     
     public Organization createOrganization(Type type){
         Organization organization = null;
-        if (type.getValue().equals(Type.DiagnosticsAdmin.getValue())){
-            organization = new DiagnosticsOrganization(String.valueOf(type));
+        if (type.getValue().equals(Type.LabAdmin.getValue())){
+            organization = new LaboratoryOrganization(String.valueOf(type));
             organizationList.add(organization);
         }
         else if (type.getValue().equals(Type.VaccineCompanyAdmin.getValue())){
@@ -30,7 +34,7 @@ public class OrganizationDirectory {
             organizationList.add(organization);
         }
         else if (type.getValue().equals(Type.PharmacyAdmin.getValue())){
-            organization = new DispensaryOrganization(String.valueOf(type));
+            organization = new PharmacyOrganization(String.valueOf(type));
             organizationList.add(organization);
         }
         else if (type.getValue().equals(Type.InsuranceAdmin.getValue())){

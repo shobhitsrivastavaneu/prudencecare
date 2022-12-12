@@ -5,7 +5,7 @@
  */
 package Business.WorkQueue;
 
-import Business.Insurance.Insurance;
+import Business.InsurancePolicy.InsurancePolicy;
 import Business.UserAccount.UserAccount;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  *
- * @author Shobhit
+ * @author Anjali
  */
 public class PatientHospitalAppointmentWorkRequest {
     private String message;
@@ -28,13 +28,13 @@ public class PatientHospitalAppointmentWorkRequest {
     private String result;
     private double cost;
     private Map<String,Date> statusMap;
-    private Insurance Insurance;
+    private InsurancePolicy Insurance;
 
-    public Insurance getInsurance() {
+    public InsurancePolicy getInsurance() {
         return Insurance;
     }
 
-    public void setInsurance(Insurance Insurance) {
+    public void setInsurance(InsurancePolicy Insurance) {
         this.Insurance = Insurance;
     }
     public double getCost() {
