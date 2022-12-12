@@ -10,7 +10,7 @@ import userinterface.ManufacturerRole.ManufacturerWorkAreaJPanel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Shobit
  */
 public class ManufactureAdminRole extends Role{
      @Override
