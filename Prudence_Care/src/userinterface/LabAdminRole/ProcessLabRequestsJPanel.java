@@ -33,7 +33,7 @@ import userinterface.AdministrativeRole.ManageUserAccountJPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class ProcessLabRequestsJPanel extends javax.swing.JPanel {
 

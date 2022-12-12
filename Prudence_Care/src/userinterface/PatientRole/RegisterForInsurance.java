@@ -41,7 +41,7 @@ import userinterface.InsuranceAdminWorkArea.ViewPolicyWorkAreaJPanel;
 
 /**
  *
- * @author Anjali
+ * @author rishabagarwal
  */
 public class RegisterForInsurance extends javax.swing.JPanel {
 

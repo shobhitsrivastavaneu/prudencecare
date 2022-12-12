@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Anjali
+ * @author rishabagarwal
  */
 public class InsurancePolicy {
     private String policyName;

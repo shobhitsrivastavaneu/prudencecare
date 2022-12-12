@@ -39,7 +39,7 @@ import userinterface.VaccineTestingStaffRole.ViewVaccineTestJPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class FDAWorkAreaJPanel extends javax.swing.JPanel {
 

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
 // */
 //public class HealthDeptOrganization extends Organization{
 //   private String organizationType;

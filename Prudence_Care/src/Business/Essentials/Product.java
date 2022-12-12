@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  *
- * @author abhishekashwathnarayanvenkat
+ * @author rishabagarwal
  */
 public class Product {
     

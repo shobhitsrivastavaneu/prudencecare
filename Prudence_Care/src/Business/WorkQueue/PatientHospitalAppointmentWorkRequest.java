@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  *
- * @author Anjali
+ * @author rishabagarwal
  */
 public class PatientHospitalAppointmentWorkRequest {
     private String message;

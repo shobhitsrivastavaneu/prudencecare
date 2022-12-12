@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class LabPatientWorkRequest {
        private Vaccine vaccine;

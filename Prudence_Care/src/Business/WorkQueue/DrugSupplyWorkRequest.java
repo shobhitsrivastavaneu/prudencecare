@@ -13,7 +13,7 @@ import java.util.Map;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class DrugSupplyWorkRequest {
     private int quantity;

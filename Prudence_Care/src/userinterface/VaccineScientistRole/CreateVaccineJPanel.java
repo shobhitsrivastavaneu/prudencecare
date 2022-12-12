@@ -22,7 +22,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class CreateVaccineJPanel extends javax.swing.JPanel {
 

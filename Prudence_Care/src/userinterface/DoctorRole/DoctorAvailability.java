@@ -25,7 +25,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Anjali
+ * @author rishabagarwal
  */
 public class DoctorAvailability extends javax.swing.JPanel {
 

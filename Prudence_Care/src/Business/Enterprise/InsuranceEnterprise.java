@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Anjali
+ * @author rishabagarwal
  */
 public class InsuranceEnterprise extends Enterprise {
     

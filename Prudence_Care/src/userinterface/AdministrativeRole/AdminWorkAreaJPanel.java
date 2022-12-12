@@ -33,7 +33,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author  raunak
+ * @author  Shobhit, rishabagarwal, parvathypillai
  */
 public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     

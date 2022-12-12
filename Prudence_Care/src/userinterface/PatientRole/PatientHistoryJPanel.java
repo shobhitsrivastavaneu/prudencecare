@@ -53,7 +53,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 
 /**
  *
- * @author sayu
+ * @author Shobhit, rishabagarwal, parvathypillai
  */
 public class PatientHistoryJPanel extends javax.swing.JPanel {
 

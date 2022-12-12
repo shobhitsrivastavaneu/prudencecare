@@ -17,7 +17,7 @@ import userinterface.PharmacyAdminRole.PharmacyAdminWorkAreaJPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class PharmacyAdminRole extends Role{
 

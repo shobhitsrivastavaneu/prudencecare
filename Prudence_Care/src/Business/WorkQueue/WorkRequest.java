@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  *
- * @author raunak
+ * @author Shobhit, rishabagarwal, parvathypillai
  */
 public abstract class WorkRequest {
 

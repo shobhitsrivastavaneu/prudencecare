@@ -33,7 +33,7 @@ import org.jfree.data.general.DefaultPieDataset;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class LabReportJPanel extends javax.swing.JPanel {
         private JPanel userProcessContainer;

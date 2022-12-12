@@ -14,7 +14,7 @@ import java.util.Map;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class LabEnterprise extends Enterprise {
     Map<String,String> timeSlot;

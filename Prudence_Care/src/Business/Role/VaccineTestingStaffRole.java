@@ -16,7 +16,7 @@ import userinterface.VaccineTestingStaffRole.VaccineTestingStaffWorkPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class VaccineTestingStaffRole extends Role{
 

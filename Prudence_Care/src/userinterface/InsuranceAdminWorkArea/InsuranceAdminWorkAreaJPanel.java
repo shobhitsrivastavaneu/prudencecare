@@ -42,7 +42,7 @@ import userinterface.PatientRole.CreatePatientJPanel;
 
 /**
  *
- * @author Anjali
+ * @author rishabagarwal
  */
 public class InsuranceAdminWorkAreaJPanel extends javax.swing.JPanel {
 

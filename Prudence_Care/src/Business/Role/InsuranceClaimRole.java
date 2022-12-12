@@ -15,7 +15,7 @@ import userinterface.InsuranceClaimWorkAreaJPanel.InsuranceClaimWorkAreaJPanel;
 
 /**
  *
- * @author Anjali
+ * @author rishabagarwal
  */
 public class InsuranceClaimRole extends Role{
     
