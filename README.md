@@ -24,3 +24,4 @@ Patients use this program as a one-stop shop for all of their healthcare require
 ![Untitled Diagram drawio](https://user-images.githubusercontent.com/114714618/206963553-7447bb84-5ab5-4a2c-b40a-01214602cc9e.svg)
 
 ![ClassSequenceDiagram drawio](https://user-images.githubusercontent.com/114714618/206963566-33fe00de-dce1-44be-b5d1-a9770750f262.svg)
+![UML drawio](https://user-images.githubusercontent.com/114714618/206963740-b0dfc552-cdad-4a24-8eed-99bafc63c055.svg)
