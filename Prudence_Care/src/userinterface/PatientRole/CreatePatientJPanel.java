@@ -886,7 +886,7 @@ if (passwordPatternCorrect()==false){
             }
             if(!txtPhone.getText().equalsIgnoreCase("")){
 
-                phone = "8573997267";
+                phone = txtPhone.getText();
 
                 String phoneRegex = "^[0-9]{10}$";
                 Pattern phonePattern = Pattern.compile(phoneRegex);
@@ -990,9 +990,11 @@ if (passwordPatternCorrect()==false){
                         //                    }
                     //                }
                 JOptionPane.showMessageDialog(null,"Patient added successfully!!!");
-                sendFromGMail("medtech2254", "AedGroup@9", new String[]{toemail},"Registration Confirmation- MEDTECH HEALTH CARE","Thank you for Registaring with MedTech health care, We are here to help you!!");
-                SmsSender.sendSms(phone, "Thank you for Registaring with MedTech health care, your mobile number is registered!!");
-                System.out.println("email bbcm");
+                 sendFromGMail("agarwalrishab34@gmail.com", "oxnndrrbavsmbxye", new String[]{toemail},"Registration Confirmation- PRUDENCE CARE","Thank you for Registaring with Prudence Care, Now you are in Safe Hands!");
+               //SmsSender.sendSms("+917875069769", "Thank you for Registaring with Prudence Care, your mobile number is registered sucessfully!!");
+                SmsSender.sendSms(phone, "Thank you for Registaring with Prudence Care, your mobile number is registered sucessfully!!");
+
+                   System.out.println("email bbcm");
                 //String from, String pass, String[] to, String subject, String body
                 txtName.setText("");
                 txtGeo.setText("");
@@ -1206,12 +1208,21 @@ private boolean usernamePatternCorrect(){
  private static void sendFromGMail(String from, String pass, String[] to, String subject, String body) {
         Properties props = System.getProperties();
         String host = "smtp.gmail.com";
-        props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.host", host);
-        props.put("mail.smtp.user", from);
+       
+        
+         props.put("mail.smtp.user", from);
         props.put("mail.smtp.password", pass);
-        props.put("mail.smtp.port", "587");
-        props.put("mail.smtp.auth", "true");
+        
+   props.put("mail.smtp.host", host);
+
+    props.put("mail.smtp.port", "587");
+
+    props.put("mail.smtp.auth", "true");
+
+    props.put("mail.smtp.ssl.protocols", "TLSv1.2");
+
+    props.put("mail.smtp.starttls.enable", "true");
+        
 
         Session session = Session.getDefaultInstance(props);
         MimeMessage message = new MimeMessage(session);
