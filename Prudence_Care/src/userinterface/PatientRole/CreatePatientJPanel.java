@@ -1207,13 +1207,24 @@ private boolean usernamePatternCorrect(){
     }//GEN-LAST:event_txtEmailKeyTyped
  private static void sendFromGMail(String from, String pass, String[] to, String subject, String body) {
         Properties props = System.getProperties();
-        String host = "smtp.gmail.com";
-        props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.host", host);
-        props.put("mail.smtp.user", from);
+      
+        
+        
+         String host = "smtp.gmail.com";
+       
+        
+         props.put("mail.smtp.user", from);
         props.put("mail.smtp.password", pass);
-        props.put("mail.smtp.port", "587");
-        props.put("mail.smtp.auth", "true");
+        
+   props.put("mail.smtp.host", host);
+
+    props.put("mail.smtp.port", "587");
+
+    props.put("mail.smtp.auth", "true");
+
+    props.put("mail.smtp.ssl.protocols", "TLSv1.2");
+
+    props.put("mail.smtp.starttls.enable", "true");
 
         Session session = Session.getDefaultInstance(props);
         MimeMessage message = new MimeMessage(session);

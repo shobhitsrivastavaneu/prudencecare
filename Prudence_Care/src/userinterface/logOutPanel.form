@@ -93,7 +93,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="48" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="MEDTECH  HEALTH CARE"/>
+            <Property name="text" type="java.lang.String" value="PRUDENCE CARE"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
