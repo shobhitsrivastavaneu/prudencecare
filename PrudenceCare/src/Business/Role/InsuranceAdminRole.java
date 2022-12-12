@@ -11,11 +11,11 @@ import Business.Organization.InsuranceAdminOrganization;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import UserInterface.InsuranceAdminWorkArea.InsuranceAdminWorkAreaJPanel;
+import userinterface.InsuranceAdminWorkArea.InsuranceAdminWorkAreaJPanel;
 
 /**
  *
- * @author Anjali
+ * @author parvathypillai
  */
 public class InsuranceAdminRole extends Role{
 

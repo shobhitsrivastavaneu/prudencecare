@@ -15,7 +15,7 @@ import userinterface.HospitalStaffWorkAreaJPanel.HospitalStaffWorkAreaJPanel;
 
 /**
  *
- * @author Anjali
+ * @author parvathypillai
  */
 public class HospitalStaffRole extends Role{
 
