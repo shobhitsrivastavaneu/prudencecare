@@ -195,10 +195,7 @@
                       <Component id="jCheckBoxPrimaryHospital" min="-2" max="-2" attributes="0"/>
                       <Component id="jComboBoxHospitalList" alignment="0" min="-2" pref="183" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="txtDetails" alignment="0" max="32767" attributes="0"/>
-                              <Component id="dateApp" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="txtDetails" min="-2" pref="191" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jComboBoxTime" min="-2" pref="73" max="-2" attributes="0"/>
                       </Group>
@@ -231,14 +228,9 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jComboBoxHospitalList" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jComboBoxTime" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                  <Component id="txtDetails" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="dateApp" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jComboBoxTime" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="txtDetails" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="44" max="32767" attributes="0"/>
@@ -348,16 +340,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Appointment Details:"/>
           </Properties>
-        </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="dateApp">
-          <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="dateAppMouseClicked"/>
-          </Events>
         </Component>
       </SubComponents>
     </Container>

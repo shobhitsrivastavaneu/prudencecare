@@ -7,7 +7,7 @@ package Business.WorkQueue;
 
 /**
  *
- * @author Shobhit
+ * @author Anjali
  */
 public class InsuranceWorkRequest extends WorkRequest{
      private String insuranceResult;

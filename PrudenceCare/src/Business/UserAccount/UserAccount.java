@@ -18,7 +18,7 @@ import Business.WorkQueue.PharmaWorkQueue;
 import Business.WorkQueue.VaccineWorkQueue;
 /**
  *
- * @author rishabagarwal
+ * @author raunak
  */
 public class UserAccount {
     

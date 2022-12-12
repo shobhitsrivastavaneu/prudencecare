@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author parvathypillai
+ * @author raunak
  */
 public class ManageNetworkJPanel extends javax.swing.JPanel {
 
@@ -125,11 +125,6 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         });
 
         nameJTextField.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        nameJTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nameJTextFieldActionPerformed(evt);
-            }
-        });
 
         jPanel1.setBackground(new java.awt.Color(217, 185, 41));
 
@@ -239,10 +234,6 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
     }//GEN-LAST:event_backJButtonActionPerformed
-
-    private void nameJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameJTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nameJTextFieldActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;

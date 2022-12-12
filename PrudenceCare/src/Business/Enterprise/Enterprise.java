@@ -10,7 +10,7 @@ import Business.Organization.OrganizationDirectory;
 
 /**
  *
- * @author Shobhit
+ * @author MyPC1
  */
 public abstract class Enterprise extends Organization{
     
@@ -26,7 +26,7 @@ public abstract class Enterprise extends Organization{
         VaccineCompany("VaccineCompany"),
         Laboratory("Laboratory"),
         Insurance("Insurance"),
-        FDA("Food and drug administration"),
+        FDA("Food and Drug Administration"),
         Pharmacy("Pharmacy"),
         DrugManufacturer("DrugManufacturer");
         

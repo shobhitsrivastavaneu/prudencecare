@@ -34,7 +34,7 @@ import userinterface.VaccineScientistRole.ViewVaccineJPanel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class PharmacyAdminWorkAreaJPanel extends javax.swing.JPanel {
 

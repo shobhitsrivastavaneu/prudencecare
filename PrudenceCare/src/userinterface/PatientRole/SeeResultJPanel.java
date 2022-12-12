@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Shobhit
+ * @author sayu
  */
 public class SeeResultJPanel extends javax.swing.JPanel {
 

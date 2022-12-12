@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author rishabagarwal
+ * @author sayu
  */
 public class DoctorDirectory {
     private ArrayList<Doctor> doctorlist;

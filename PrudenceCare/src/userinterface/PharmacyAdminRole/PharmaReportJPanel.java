@@ -44,7 +44,7 @@ import org.jfree.data.general.DefaultPieDataset;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class PharmaReportJPanel extends javax.swing.JPanel {
 

@@ -17,7 +17,7 @@ import userinterface.PatientRole.PatientWorkAreaJPanel;
 
 /**
  *
- * @author Shobit
+ * @author sayu
  */
 public class PatientRole extends Role{
 

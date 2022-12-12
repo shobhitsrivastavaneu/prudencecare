@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Shobhit
+ * @author MyPC1
  */
 public class HospitalEnterprise extends Enterprise {
     

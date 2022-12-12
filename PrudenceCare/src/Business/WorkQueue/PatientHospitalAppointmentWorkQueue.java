@@ -13,7 +13,7 @@ import java.util.Map;
 
 /**
  *
- * @author parvathypillai
+ * @author Anjali
  */
 public class PatientHospitalAppointmentWorkQueue {
         private ArrayList<PatientHospitalAppointmentWorkRequest> hospitalAppointmentworkRequestList;

@@ -7,7 +7,7 @@ package userinterface;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class WelcomeWindow extends javax.swing.JFrame {
 

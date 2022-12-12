@@ -28,7 +28,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class ViewTestersJPanel extends javax.swing.JPanel {
 

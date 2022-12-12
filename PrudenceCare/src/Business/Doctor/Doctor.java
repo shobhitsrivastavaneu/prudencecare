@@ -14,7 +14,7 @@ import java.util.Map;
 
 /**
  *
- * @author rishabagarwal
+ * @author sayu
  */
 public class Doctor extends Employee {
      private String name;
@@ -40,6 +40,7 @@ public class Doctor extends Employee {
     private String userName;
     private ArrayList<String> TimeSlotList=new ArrayList<String>();
     Map<LocalDate,ArrayList<String>>appointment;
+    //private String photograph;
 
     public Map<LocalDate, ArrayList<String>> getAppointment() {
         return appointment;

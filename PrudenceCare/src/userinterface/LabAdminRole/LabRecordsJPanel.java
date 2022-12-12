@@ -27,7 +27,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class LabRecordsJPanel extends javax.swing.JPanel {
 
@@ -47,7 +47,7 @@ public class LabRecordsJPanel extends javax.swing.JPanel {
                 lblAccount.setText("Logged in as: "+account.getUsername());
         this.setSize(1466, 902);
           populateAllRecords();
-         
+         populateTimeline("");
         DefaultTableCellRenderer headerRenderer = new DefaultTableCellRenderer();
         headerRenderer.setBackground(java.awt.Color.BLACK);
          headerRenderer.setForeground(java.awt.Color.WHITE);
@@ -59,7 +59,12 @@ public class LabRecordsJPanel extends javax.swing.JPanel {
         respTable.setShowGrid(true);
        respTable.getTableHeader().setFont(new Font("SansSerif 14 Plain",Font.BOLD,16));
 
-    
+        for (int i = 0; i < timelineTable.getModel().getColumnCount(); i++) {
+            timelineTable.getColumnModel().getColumn(i).setHeaderRenderer(headerRenderer);
+        }
+        
+        timelineTable.setShowGrid(true);
+       timelineTable.getTableHeader().setFont(new Font("SansSerif 14 Plain",Font.BOLD,16));
     }
     public void populateAllRecords(){
                DefaultTableModel model = (DefaultTableModel)respTable.getModel();
@@ -108,7 +113,23 @@ public class LabRecordsJPanel extends javax.swing.JPanel {
         return sortedMap;
     }
   
-    
+      public void populateTimeline(LabPatientWorkRequest req){
+       DefaultTableModel model = (DefaultTableModel)timelineTable.getModel();
+        model.setRowCount(0);
+           Map<String,Date> map = req.getStatusMap();
+           Map<String, Date> Sortedmap = sortByDate(map);
+            for (Map.Entry<String,Date> mapEntry : Sortedmap.entrySet()) {
+                            Object row[] = new Object[5];
+                 row[0] =mapEntry.getValue(); 
+                 row[1] = mapEntry.getKey();
+                  model.addRow(row); 
+               }
+      }
+            public void populateTimeline(String blank){
+       DefaultTableModel model = (DefaultTableModel)timelineTable.getModel();
+        model.setRowCount(0);
+         
+      } 
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -120,6 +141,9 @@ public class LabRecordsJPanel extends javax.swing.JPanel {
 
         jScrollPane2 = new javax.swing.JScrollPane();
         respTable = new javax.swing.JTable();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        timelineTable = new javax.swing.JTable();
+        btnTime = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
@@ -147,6 +171,39 @@ public class LabRecordsJPanel extends javax.swing.JPanel {
             }
         });
         jScrollPane2.setViewportView(respTable);
+
+        timelineTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Date", "Status"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane6.setViewportView(timelineTable);
+
+        btnTime.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        btnTime.setForeground(new java.awt.Color(0, 102, 102));
+        btnTime.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/timeline.png"))); // NOI18N
+        btnTime.setText("View Timeline");
+        btnTime.setBorderPainted(false);
+        btnTime.setContentAreaFilled(false);
+        btnTime.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTimeActionPerformed(evt);
+            }
+        });
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/fast_company_lab.gif"))); // NOI18N
 
@@ -185,8 +242,16 @@ public class LabRecordsJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 790, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(184, 184, 184))
             .addGroup(layout.createSequentialGroup()
-                .addGap(32, 32, 32)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 1121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(425, 425, 425)
+                        .addComponent(btnTime, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 1121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 1127, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -205,9 +270,26 @@ public class LabRecordsJPanel extends javax.swing.JPanel {
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(335, 335, 335))
+                .addGap(18, 18, 18)
+                .addComponent(btnTime)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(59, 59, 59))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTimeActionPerformed
+        // TODO add your handling code here:
+        int selectedRow = respTable.getSelectedRow();
+        if(selectedRow<0){
+            JOptionPane.showMessageDialog(null, "Please select a Request row!", "Warning", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+
+        LabPatientWorkRequest l= (LabPatientWorkRequest)respTable.getValueAt(selectedRow, 0);
+
+        populateTimeline(l);
+    }//GEN-LAST:event_btnTimeActionPerformed
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
         // TODO add your handling code here:
@@ -219,10 +301,13 @@ public class LabRecordsJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
+    private javax.swing.JButton btnTime;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JLabel lblAccount;
     private javax.swing.JTable respTable;
+    private javax.swing.JTable timelineTable;
     // End of variables declaration//GEN-END:variables
 }

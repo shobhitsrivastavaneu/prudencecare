@@ -26,7 +26,7 @@ import userinterface.InsuranceAdminWorkArea.ViewPolicyWorkAreaJPanel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Anjali
  */
 public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
 

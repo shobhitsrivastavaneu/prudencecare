@@ -22,7 +22,7 @@ import userinterface.InsuranceAdminWorkArea.ViewPolicyWorkAreaJPanel;
 
 /**
  *
- * @author Shobhit
+ * @author Anjali
  */
 public class HospitalStaffWorkAreaJPanel extends javax.swing.JPanel {
 

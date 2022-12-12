@@ -18,7 +18,7 @@ import userinterface.SystemAdminWorkArea.ManagePateintJPanel;
 
 /**
  *
- * @author Shobhit
+ * @author sayu
  */
 public class CreateJPanel extends javax.swing.JPanel {
 

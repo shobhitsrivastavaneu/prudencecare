@@ -15,7 +15,7 @@ import userinterface.AmbulanceDriverWorkAreaJPanel.AmbulanceDriverWorkAreaJPanel
 
 /**
  *
- * @author parvathypillai
+ * @author Anjali
  */
 public class AmbulanceDriverRole extends Role{
 

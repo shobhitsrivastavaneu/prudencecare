@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class PharmaWorkQueue {
     

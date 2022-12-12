@@ -10,7 +10,7 @@ import javax.swing.DefaultListModel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Anjali
  */
 public class PatientsinPolicyWorkAreaJPanel extends javax.swing.JPanel {
 
