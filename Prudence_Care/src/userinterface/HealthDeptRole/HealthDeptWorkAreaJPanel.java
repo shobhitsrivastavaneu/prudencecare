@@ -20,7 +20,7 @@ import userinterface.VaccineAdminRole.VaccineCompReportJPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class HealthDeptWorkAreaJPanel extends javax.swing.JPanel {
 

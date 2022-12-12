@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author sayu
+ * @author Shobhit, rishabagarwal, parvathypillai
  */
 public class AmbUpdateJPanel extends javax.swing.JPanel {
 

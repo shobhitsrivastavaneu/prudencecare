@@ -10,7 +10,7 @@ import java.util.Date;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class Medicine {
     private String name;

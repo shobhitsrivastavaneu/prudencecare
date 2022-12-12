@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class VaccineTester {
     

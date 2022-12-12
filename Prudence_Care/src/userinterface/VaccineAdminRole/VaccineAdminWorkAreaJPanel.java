@@ -18,7 +18,7 @@ import userinterface.AdministrativeRole.ManageUserAccountJPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class VaccineAdminWorkAreaJPanel extends javax.swing.JPanel {
 

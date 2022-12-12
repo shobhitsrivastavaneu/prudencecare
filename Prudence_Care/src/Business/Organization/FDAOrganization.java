@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Anjali
+ * @author rishabagarwal
  */
 public class FDAOrganization extends Organization{
    private String organizationType;

@@ -25,7 +25,7 @@ import javax.swing.border.LineBorder;
 
 /**
  *
- * @author Anjali
+ * @author rishabagarwal
  */
 public class CreatePolicyWorkAreaJPanel extends javax.swing.JPanel {
 

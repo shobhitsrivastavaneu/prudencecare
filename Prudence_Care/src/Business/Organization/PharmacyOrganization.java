@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class PharmacyOrganization extends Organization{
     private String organizationType;

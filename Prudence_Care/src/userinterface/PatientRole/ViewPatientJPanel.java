@@ -27,7 +27,7 @@ import javax.swing.JPanel;
 import userinterface.SystemAdminWorkArea.ManagePateintJPanel;
 /**
  *
- * @author sayu
+ * @author Shobhit, rishabagarwal, parvathypillai
  */
 public class ViewPatientJPanel extends javax.swing.JPanel {
 

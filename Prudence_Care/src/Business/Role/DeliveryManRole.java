@@ -17,7 +17,7 @@ import userinterface.LabStaffRole.LabStaffWorkAreaJPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class DeliveryManRole extends Role{
 

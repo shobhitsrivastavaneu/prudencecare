@@ -18,7 +18,7 @@ import userinterface.VaccineScientistRole.VaccineScientistWorkAreaJPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class VaccineScientistRole extends Role{
 

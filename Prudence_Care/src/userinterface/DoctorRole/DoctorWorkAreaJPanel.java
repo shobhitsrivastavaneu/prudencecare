@@ -23,7 +23,7 @@ import userinterface.PatientRole.PatientHistoryJPanel;
 
 /**
  *
- * @author sayu
+ * @author Shobhit, rishabagarwal, parvathypillai
  */
 public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
 

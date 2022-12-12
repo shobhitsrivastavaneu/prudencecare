@@ -33,7 +33,7 @@ import userinterface.VaccineAdminRole.VaccineCompReportJPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class ManufacturerWorkAreaJPanel extends javax.swing.JPanel {
 

@@ -14,7 +14,7 @@ import userinterface.LabAdminRole.LabAdminWorkAreaJPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class LabAdminRole extends Role{
 

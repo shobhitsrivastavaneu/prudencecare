@@ -190,16 +190,28 @@ public class MainJFrame extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addGap(410, 410, 410)
                 .addComponent(jLabel3)
                 .addContainerGap(447, Short.MAX_VALUE))
+=======
+                .addGap(323, 323, 323)
+                .addComponent(jLabel3)
+                .addContainerGap(534, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addContainerGap(190, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addGap(654, 654, 654))
+=======
+                .addGap(62, 62, 62)
+                .addComponent(jLabel3)
+                .addContainerGap(782, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
 
         container.add(jPanel2, "card2");

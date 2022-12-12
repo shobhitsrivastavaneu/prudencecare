@@ -14,7 +14,7 @@ import java.util.Map;
 
 /**
  *
- * @author sayu
+ * @author Shobhit, rishabagarwal, parvathypillai
  */
 public class Doctor extends Employee {
      private String name;

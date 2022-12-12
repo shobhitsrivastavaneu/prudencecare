@@ -45,7 +45,7 @@ import javax.swing.text.html.StyleSheet;
 import org.jfree.util.StringUtils;
 /**
  *
- * @author sayu
+ * @author Shobhit, rishabagarwal, parvathypillai
  */
 public class EmergencyJPanel extends javax.swing.JPanel {
 
@@ -481,7 +481,7 @@ JPanel userProcessContainer;
         }
         int room = 0;
         String msg = "Notified Primary hospital -"+patient.getPrimaryHospital();
-                       sendFromGMail("medtech2254", "AedGroup@9", new String[]{"anjalisajeev@gmail.com"},"HIGH-PRIORITY!!! -Emergency Request Raised!","Emergency Request has been raised to your hospital! Patient has been allocated room and hospital Notified. Immediate Action Required.");
+                       sendFromGMail("medtech2254", "AedGroup@9", new String[]{"rishabagarwalsajeev@gmail.com"},"HIGH-PRIORITY!!! -Emergency Request Raised!","Emergency Request has been raised to your hospital! Patient has been allocated room and hospital Notified. Immediate Action Required.");
                 JOptionPane.showMessageDialog(null,msg, "Confirmation", JOptionPane.INFORMATION_MESSAGE);
              
     }//GEN-LAST:event_btnSendActionPerformed

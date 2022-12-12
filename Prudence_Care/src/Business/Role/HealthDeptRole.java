@@ -15,7 +15,7 @@ import userinterface.HealthDeptRole.HealthDeptWorkAreaJPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class HealthDeptRole extends Role{
      @Override

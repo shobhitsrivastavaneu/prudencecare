@@ -49,7 +49,7 @@ import javax.swing.JPanel;
 import userinterface.SystemAdminWorkArea.ManagePateintJPanel;
 /**
  *
- * @author sayu
+ * @author Shobhit, rishabagarwal, parvathypillai
  */
 public class CreatePatientJPanel extends javax.swing.JPanel {
 

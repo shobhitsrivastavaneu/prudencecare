@@ -24,7 +24,7 @@ import userinterface.PatientRole.EmergencyJPanel;
 
 /**
  *
- * @author Anjali
+ * @author rishabagarwal
  */
 public class AmbulanceDriverWorkAreaJPanel extends javax.swing.JPanel {
 

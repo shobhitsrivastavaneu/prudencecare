@@ -39,7 +39,7 @@ import userinterface.VaccineScientistRole.ViewVaccineJPanel;
 
 /**
  *
- * @author Manasa
+ * @author Shobhit, rishabagarwal, parvathy pillai
  */
 public class MedicineRequestsJPanel extends javax.swing.JPanel {
 
