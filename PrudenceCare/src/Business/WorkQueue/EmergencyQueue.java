@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author Manasa
+ * @author rishabagarwal
  */
 public class EmergencyQueue {
     

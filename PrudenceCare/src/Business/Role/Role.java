@@ -12,24 +12,24 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author parvathypillai
+ * @author raunak,rishabagarwal
  */
 public abstract class Role {
     
     public enum RoleType{
         HospitalAdmin("HospitalAdmin"),
         Doctor("Doctor"),
-        HospitalStaff("HospitalCrew"),
+        HospitalStaff("HospitalStaff"),
         AmbulanceDriver("AmbulanceDriver"),
-        LabAdmin("DiagnosticsAdmin"),
-        LabStaff("DiagnosticsStaff"),
-        PharmacyAdmin("DispensaryAdmin"),
-        DeliveryMan("Rider"),
+        LabAdmin("LabAdmin"),
+        LabStaff("LabStaff"),
+        PharmacyAdmin("PharmacyAdmin"),
+        DeliveryMan("DeliveryMan"),
         VaccineAdmin("VaccineAdmin"),
         VaccineScientists("VaccineScientists"),
         InsuranceAdmin("InsuranceAdmin"),
         InsuranceStaff("InsuranceStaff"),
-        ///FDAAdmin("FDAAdmin"), ////
+        FDAAdmin("FDAAdmin"),
         ManufactureAdmin("ManufactureAdmin");
         
         private String value;

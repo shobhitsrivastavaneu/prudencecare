@@ -8,8 +8,8 @@ import Business.WorkQueue.ClaimWorkQueue;
 import Business.WorkQueue.DrugDemandQueue;
 import Business.WorkQueue.DrugSupplyQueue;
 import Business.WorkQueue.EmergencyQueue;
-import Business.WorkQueue.DiagnosticsPatientWorkQueue;
-import Business.WorkQueue.DiagnosticsTestWorkQueue;
+import Business.WorkQueue.LabPatientWorkQueue;
+import Business.WorkQueue.LabTestWorkQueue;
 import Business.WorkQueue.PatientHospitalAppointmentWorkQueue;
 import Business.WorkQueue.PharmaWorkQueue;
 import Business.WorkQueue.VaccineWorkQueue;
@@ -27,9 +27,9 @@ public abstract class Organization {
     private VaccineWorkQueue vaccineQueue;
     private PatientHospitalAppointmentWorkQueue hospitalQueue;
     private ClaimWorkQueue claimWorkQueue;
-    private DiagnosticsTestWorkQueue labQueue;
+    private LabTestWorkQueue labQueue;
     private PharmaWorkQueue pharmaQueue;
-    private DiagnosticsPatientWorkQueue labPatQueue;
+    private LabPatientWorkQueue labPatQueue;
     private EmergencyQueue emergencyQueue;
     private DrugDemandQueue pharmaDemandQueue;
     private DrugSupplyQueue pharmaSupplyQueue;
@@ -42,7 +42,7 @@ public abstract class Organization {
         HospitalAdmin("Hospiatal Organization"), Doctor("Hospiatal Organization"),HospitalStaff("Hospiatal Organization"),AmbulanceDriver("Hospiatal Organization"),
         PharmacyAdmin("Pharmacy Organization"),DeliveryMan("Pharmacy Organization"),
         VaccineCompanyAdmin("Vaccine Organization"),VaccineScientist("Vaccine Organization"),VaccineTestingStaff("Vaccine Organization"),
-        DiagnosticsAdmin("Diagnostics Organization"),DiagnosticsCrew("Diagnostics Organization"),
+        LabAdmin("Laboratory Organization"),LabStaff("Laboratory Organization"),
         InsuranceAdmin("Insurance Organization"), InsuranceStaff("Insurance Organization"),
         FDAAdmin("FDA Organization"),ManufactureAdmin("Manufacturing Organization");
         
@@ -61,11 +61,11 @@ public abstract class Organization {
         vaccineQueue = new VaccineWorkQueue();
         hospitalQueue=new PatientHospitalAppointmentWorkQueue();
         claimWorkQueue = new ClaimWorkQueue();
-        labPatQueue = new DiagnosticsPatientWorkQueue();
+        labPatQueue = new LabPatientWorkQueue();
         pharmaQueue = new PharmaWorkQueue();
         emergencyQueue = new EmergencyQueue();
         hospitalQueue=new PatientHospitalAppointmentWorkQueue();
-        labQueue = new DiagnosticsTestWorkQueue();
+        labQueue = new LabTestWorkQueue();
         pharmaDemandQueue = new DrugDemandQueue();
         pharmaSupplyQueue = new DrugSupplyQueue();
         employeeDirectory = new EmployeeDirectory();
@@ -127,11 +127,11 @@ public abstract class Organization {
     public void setVaccineQueue(VaccineWorkQueue vaccineQueue) {
         this.vaccineQueue = vaccineQueue;
     } 
-    public DiagnosticsTestWorkQueue getLabQueue() {
+    public LabTestWorkQueue getLabQueue() {
         return labQueue;
     }
 
-    public void setLabQueue(DiagnosticsTestWorkQueue labQueue) {
+    public void setLabQueue(LabTestWorkQueue labQueue) {
         this.labQueue = labQueue;
     }
 
@@ -143,11 +143,11 @@ public abstract class Organization {
         this.pharmaQueue = pharmaQueue;
     }
 
-    public DiagnosticsPatientWorkQueue getLabPatQueue() {
+    public LabPatientWorkQueue getLabPatQueue() {
         return labPatQueue;
     }
 
-    public void setLabPatQueue(DiagnosticsPatientWorkQueue labPatQueue) {
+    public void setLabPatQueue(LabPatientWorkQueue labPatQueue) {
         this.labPatQueue = labPatQueue;
     }
 

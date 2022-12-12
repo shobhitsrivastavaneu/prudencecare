@@ -1,4 +1,8 @@
-
+ /*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Business.Enterprise;
 
 import Business.Organization.Organization;
@@ -20,10 +24,10 @@ public abstract class Enterprise extends Organization{
     public enum EnterpriseType{
         Hospital("Hospital"),
         VaccineCompany("VaccineCompany"),
-        Diagnostics("Diagnostics"),
+        Laboratory("Laboratory"),
         Insurance("Insurance"),
         FDA("Food and drug administration"),
-        Dispensary("Dispensary"),
+        Pharmacy("Pharmacy"),
         DrugManufacturer("DrugManufacturer");
         
         

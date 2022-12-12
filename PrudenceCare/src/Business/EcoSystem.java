@@ -1,9 +1,13 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Business;
 
 import Business.Doctor.DoctorDirectory;
 import Business.Essentials.ProductCatalog;
-import Business.Insurance.InsuranceDirectory;
+import Business.InsurancePolicy.InsurancePolicyDirectory;
 import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.Patient.Patient;
@@ -14,14 +18,14 @@ import java.util.ArrayList;
 
 /**
  *
- * @author rishabagarwal
+ * @author MyPC1
  */
 public class EcoSystem extends Organization{
     
     private static EcoSystem business;
     private ArrayList<Network> networkList;
     private PatientDirectory patientDirectory;
-    private InsuranceDirectory InsuranceDirectory;
+    private InsurancePolicyDirectory insurancePolicyDirectory;
     private ProductCatalog productcatalog;
     private DoctorDirectory doctorDirectory;
     public static EcoSystem getInstance(){
@@ -45,7 +49,7 @@ public class EcoSystem extends Organization{
     private EcoSystem(){
         super(null);
         patientDirectory=new PatientDirectory();
-        InsuranceDirectory= new InsuranceDirectory();
+        insurancePolicyDirectory= new InsurancePolicyDirectory();
         productcatalog=new ProductCatalog();
         doctorDirectory= new DoctorDirectory();
         networkList=new ArrayList<Network>();
@@ -68,12 +72,12 @@ public class EcoSystem extends Organization{
         EcoSystem.business = business;
     }
 
-    public InsuranceDirectory getInsuranceDirectory() {
-        return InsuranceDirectory;
+    public InsurancePolicyDirectory getInsurancePolicyDirectory() {
+        return insurancePolicyDirectory;
     }
 
-    public void setInsuranceDirectory(InsuranceDirectory InsuranceDirectory) {
-        this.InsuranceDirectory = InsuranceDirectory;
+    public void setInsurancePolicyDirectory(InsurancePolicyDirectory insurancePolicyDirectory) {
+        this.insurancePolicyDirectory = insurancePolicyDirectory;
     }
 
     public PatientDirectory getPatientDirectory() {

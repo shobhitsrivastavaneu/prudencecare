@@ -1,4 +1,8 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Business.Driver;
 
 import Business.Employee.Employee;
@@ -33,8 +37,14 @@ public class Driver extends Employee {
     private Date dateTo;
     private String time;
     private String userName;
+ 
+    //private String photograph;
 
-    
+   
+
+   
+   
+
     public String getHealthOther() {
         return healthOther;
     }
