@@ -29,7 +29,7 @@ import userinterface.SystemAdminWorkArea.ManagePateintJPanel;
 
 /**
  *
- * @author rishabagarwal
+ * @author sayu
  */
 public class ViewDoctorProfileJPanel extends javax.swing.JPanel {
 

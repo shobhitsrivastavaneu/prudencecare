@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 /**
  *
- * @author Shobhit
+ * @author Manasa
  */
 public class EmergencyRequest {
     private UserAccount sender;

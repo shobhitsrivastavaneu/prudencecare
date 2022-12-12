@@ -20,7 +20,7 @@ import javax.swing.text.Position;
 
 /**
  *
- * @author rishabagarwal
+ * @author Anjali
  */
 public class ViewPolicyWorkAreaJPanel extends javax.swing.JPanel {
 

@@ -37,7 +37,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class DrugDevelopmentJPanel extends javax.swing.JPanel {
 

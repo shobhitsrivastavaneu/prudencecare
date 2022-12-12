@@ -14,7 +14,7 @@ import userinterface.FDAWorkAreaJPanel.FDAWorkAreaJPanel;
 
 /**
  *
- * @author parvathypillai
+ * @author Anjali
  */
 public class FDARole extends Role{
      @Override

@@ -18,7 +18,7 @@ import userinterface.VaccineAdminRole.VaccineAdminWorkAreaJPanel;
 
 /**
  *
- * @author Shobit
+ * @author Manasa
  */
 public class VaccineAdminRole extends Role{
 

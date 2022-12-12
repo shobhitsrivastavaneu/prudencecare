@@ -42,7 +42,7 @@ import userinterface.PatientRole.CreatePatientJPanel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Anjali
  */
 public class InsuranceAdminWorkAreaJPanel extends javax.swing.JPanel {
 
@@ -305,8 +305,9 @@ public class InsuranceAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         pnlCard4.setBackground(new java.awt.Color(255, 255, 255));
 
-        btnViewPolicy.setText("View Policy");
-        btnViewPolicy.setBorder(new javax.swing.border.MatteBorder(null));
+        btnViewPolicy.setBackground(new java.awt.Color(255, 255, 255));
+        btnViewPolicy.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/view_50px.png"))); // NOI18N
+        btnViewPolicy.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnViewPolicy.setBorderPainted(false);
         btnViewPolicy.setContentAreaFilled(false);
         btnViewPolicy.setFocusPainted(false);
@@ -317,8 +318,9 @@ public class InsuranceAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnDeletePolicy.setText("Delete Policy");
-        btnDeletePolicy.setBorder(new javax.swing.border.MatteBorder(null));
+        btnDeletePolicy.setBackground(new java.awt.Color(255, 255, 255));
+        btnDeletePolicy.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/delete_bin_50-2px.png"))); // NOI18N
+        btnDeletePolicy.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnDeletePolicy.setBorderPainted(false);
         btnDeletePolicy.setContentAreaFilled(false);
         btnDeletePolicy.setFocusPainted(false);
@@ -329,8 +331,9 @@ public class InsuranceAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnCreatePolicy.setText("Create Policy");
-        btnCreatePolicy.setBorder(new javax.swing.border.MatteBorder(null));
+        btnCreatePolicy.setBackground(new java.awt.Color(255, 255, 255));
+        btnCreatePolicy.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/new_copy_50px.png"))); // NOI18N
+        btnCreatePolicy.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnCreatePolicy.setBorderPainted(false);
         btnCreatePolicy.setContentAreaFilled(false);
         btnCreatePolicy.setFocusPainted(false);
@@ -369,6 +372,7 @@ public class InsuranceAdminWorkAreaJPanel extends javax.swing.JPanel {
         tblPolicy.setGridColor(new java.awt.Color(255, 255, 255));
         tblPolicy.setRowHeight(25);
         tblPolicy.setSelectionBackground(new java.awt.Color(210, 225, 249));
+        tblPolicy.setSelectionForeground(new java.awt.Color(0, 0, 0));
         jScrollPane3.setViewportView(tblPolicy);
         if (tblPolicy.getColumnModel().getColumnCount() > 0) {
             tblPolicy.getColumnModel().getColumn(0).setResizable(false);
@@ -399,12 +403,12 @@ public class InsuranceAdminWorkAreaJPanel extends javax.swing.JPanel {
                         .addGap(74, 74, 74)
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 680, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlCard4Layout.createSequentialGroup()
-                        .addGap(212, 212, 212)
-                        .addComponent(btnCreatePolicy, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(97, 97, 97)
-                        .addComponent(btnViewPolicy, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(83, 83, 83)
-                        .addComponent(btnDeletePolicy, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(218, 218, 218)
+                        .addComponent(btnCreatePolicy, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(119, 119, 119)
+                        .addComponent(btnViewPolicy)
+                        .addGap(113, 113, 113)
+                        .addComponent(btnDeletePolicy))
                     .addGroup(pnlCard4Layout.createSequentialGroup()
                         .addGap(238, 238, 238)
                         .addComponent(jLabel6)))
@@ -427,11 +431,11 @@ public class InsuranceAdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnlCard4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(pnlCard4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(btnCreatePolicy, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
-                        .addComponent(btnViewPolicy, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(btnDeletePolicy, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(76, 76, 76)
+                    .addGroup(pnlCard4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(btnCreatePolicy, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnDeletePolicy, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnViewPolicy, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(58, 58, 58)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(73, Short.MAX_VALUE))
         );
@@ -460,8 +464,11 @@ public class InsuranceAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         tblPatient.setGridColor(new java.awt.Color(255, 255, 255));
+        tblPatient.setIntercellSpacing(new java.awt.Dimension(0, 0));
         tblPatient.setRowHeight(25);
         tblPatient.setSelectionBackground(new java.awt.Color(210, 225, 249));
+        tblPatient.setSelectionForeground(new java.awt.Color(0, 0, 0));
+        tblPatient.setShowVerticalLines(false);
         tblPatient.setUpdateSelectionOnSort(false);
         tblPatient.setVerifyInputWhenFocusTarget(false);
         jScrollPane2.setViewportView(tblPatient);

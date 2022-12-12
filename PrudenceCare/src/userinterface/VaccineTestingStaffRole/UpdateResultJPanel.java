@@ -20,7 +20,7 @@ import userinterface.VaccineScientistRole.VaccineScientistWorkAreaJPanel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class UpdateResultJPanel extends javax.swing.JPanel {
 

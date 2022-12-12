@@ -24,7 +24,7 @@ import userinterface.VaccineAdminRole.ViewTestersJPanel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class ViewVaccineTestJPanel extends javax.swing.JPanel {
 

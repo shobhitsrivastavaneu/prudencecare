@@ -15,7 +15,7 @@ import userinterface.InsuranceAdminWorkArea.InsuranceAdminWorkAreaJPanel;
 
 /**
  *
- * @author parvathypillai
+ * @author Anjali
  */
 public class InsuranceAdminRole extends Role{
 

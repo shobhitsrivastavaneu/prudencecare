@@ -31,7 +31,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class BookLabJPanel extends javax.swing.JPanel {
 

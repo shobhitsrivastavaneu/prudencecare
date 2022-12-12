@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author parvathypillai
+ * @author raunak
  */
 public class ManageEnterpriseJPanel extends javax.swing.JPanel {
 
@@ -129,11 +129,6 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
 
         networkJComboBox.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         networkJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        networkJComboBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                networkJComboBoxActionPerformed(evt);
-            }
-        });
 
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         jLabel2.setText("Name");
@@ -145,11 +140,6 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
 
         enterpriseTypeJComboBox.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         enterpriseTypeJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        enterpriseTypeJComboBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                enterpriseTypeJComboBoxActionPerformed(evt);
-            }
-        });
 
         submitJButton.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         submitJButton.setText("Submit");
@@ -214,11 +204,16 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
                         .addGap(532, 532, 532)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(353, 353, 353)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(437, 437, 437)
+                                .addComponent(jLabel2))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(158, 158, 158)
+                                .addComponent(jLabel4))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(111, 111, 111)
+                                .addComponent(jLabel3)))
                         .addGap(52, 52, 52)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(networkJComboBox, 0, 214, Short.MAX_VALUE)
@@ -328,14 +323,6 @@ if(networkJComboBox.getSelectedItem().toString().equals("") || enterpriseTypeJCo
             }
             populateTable();
     }//GEN-LAST:event_btnRemActionPerformed
-
-    private void networkJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networkJComboBoxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_networkJComboBoxActionPerformed
-
-    private void enterpriseTypeJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterpriseTypeJComboBoxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_enterpriseTypeJComboBoxActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;

@@ -13,7 +13,7 @@ import java.util.Map;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class PharmaWorkRequest {
     private int id;

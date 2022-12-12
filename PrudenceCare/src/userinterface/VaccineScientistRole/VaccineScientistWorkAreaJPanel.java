@@ -35,7 +35,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class VaccineScientistWorkAreaJPanel extends javax.swing.JPanel {
 

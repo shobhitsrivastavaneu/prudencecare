@@ -31,7 +31,7 @@ import userinterface.AdministrativeRole.ManageUserAccountJPanel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class LabAdminWorkAreaJPanel extends javax.swing.JPanel {
 

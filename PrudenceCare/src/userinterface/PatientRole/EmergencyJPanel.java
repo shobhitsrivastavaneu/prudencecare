@@ -45,7 +45,7 @@ import javax.swing.text.html.StyleSheet;
 import org.jfree.util.StringUtils;
 /**
  *
- * @author parvathypillai
+ * @author sayu
  */
 public class EmergencyJPanel extends javax.swing.JPanel {
 
@@ -77,26 +77,14 @@ JPanel userProcessContainer;
      }
     }
  private static void sendFromGMail(String from, String pass, String[] to, String subject, String body) {
-        
-     String host = "smtp.gmail.com";
-     
-     Properties props = System.getProperties();
-        
-        
-        
+        Properties props = System.getProperties();
+        String host = "smtp.gmail.com";
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.host", host);
         props.put("mail.smtp.user", from);
         props.put("mail.smtp.password", pass);
-        
-   props.put("mail.smtp.host", host);
-
-    props.put("mail.smtp.port", "587");
-
-    props.put("mail.smtp.auth", "true");
-
-    props.put("mail.smtp.ssl.protocols", "TLSv1.2");
-
-    props.put("mail.smtp.starttls.enable", "true");
-        
+        props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.auth", "true");
 
         Session session = Session.getDefaultInstance(props);
         MimeMessage message = new MimeMessage(session);
@@ -493,7 +481,7 @@ JPanel userProcessContainer;
         }
         int room = 0;
         String msg = "Notified Primary hospital -"+patient.getPrimaryHospital();
-                       sendFromGMail("agarwalrishab34@gmail.com", "oxnndrrbavsmbxye", new String[]{"rishabhagarwal14628@gmail.com"},"HIGH-PRIORITY!!! -Emergency Request Raised!","Emergency Request has been raised to your hospital! Patient has been allocated room and hospital Notified. Immediate Action Required.");
+                       sendFromGMail("medtech2254", "AedGroup@9", new String[]{"anjalisajeev@gmail.com"},"HIGH-PRIORITY!!! -Emergency Request Raised!","Emergency Request has been raised to your hospital! Patient has been allocated room and hospital Notified. Immediate Action Required.");
                 JOptionPane.showMessageDialog(null,msg, "Confirmation", JOptionPane.INFORMATION_MESSAGE);
              
     }//GEN-LAST:event_btnSendActionPerformed

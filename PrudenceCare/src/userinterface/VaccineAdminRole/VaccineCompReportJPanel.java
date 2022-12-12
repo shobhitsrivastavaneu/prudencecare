@@ -43,7 +43,7 @@ import org.jfree.data.general.DefaultPieDataset;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class VaccineCompReportJPanel extends javax.swing.JPanel {
 

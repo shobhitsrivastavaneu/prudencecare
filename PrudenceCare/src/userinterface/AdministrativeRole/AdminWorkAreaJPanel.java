@@ -33,7 +33,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author  rishabagarwal
+ * @author  raunak
  */
 public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     
@@ -298,7 +298,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
-        pnl1.add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 70, -1, 66));
+        pnl1.add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(594, 71, -1, 66));
 
         manageEmployeeJButton.setBackground(new java.awt.Color(42, 0, 1));
         manageEmployeeJButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N

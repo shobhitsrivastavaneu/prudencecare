@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class VaccineCompanyOrganization extends Organization{
     private String organizationType;

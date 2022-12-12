@@ -36,7 +36,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class RequestMedicineJPanel extends javax.swing.JPanel {
 

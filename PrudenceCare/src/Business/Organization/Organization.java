@@ -1,4 +1,7 @@
-
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Business.Organization;
 
 import Business.Employee.EmployeeDirectory;
@@ -18,7 +21,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author rishabagarwal
+ * @author raunak,Manasa
  */
 public abstract class Organization {
 

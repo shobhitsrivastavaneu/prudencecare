@@ -49,7 +49,7 @@ import javax.swing.JPanel;
 import userinterface.SystemAdminWorkArea.ManagePateintJPanel;
 /**
  *
- * @author parvathypillai
+ * @author sayu
  */
 public class CreatePatientJPanel extends javax.swing.JPanel {
 
@@ -826,7 +826,7 @@ public class CreatePatientJPanel extends javax.swing.JPanel {
         String username=txtUsername.getText();
         String password=txtPassword.getText();
         String error = "";
-
+        //Validation of Personal Information and Address.
         for(Employee ua : business.getEmployeeDirectory().getEmployeeList()){
             if(ua.getName().equals(username)){
                 JOptionPane.showMessageDialog(null, " UserName already exists.");
@@ -886,7 +886,8 @@ if (passwordPatternCorrect()==false){
             }
             if(!txtPhone.getText().equalsIgnoreCase("")){
 
-                phone = txtPhone.getText();
+                phone = "8573997267";
+
                 String phoneRegex = "^[0-9]{10}$";
                 Pattern phonePattern = Pattern.compile(phoneRegex);
                 Matcher checkPhone = phonePattern.matcher(txtPhone.getText());
@@ -989,14 +990,8 @@ if (passwordPatternCorrect()==false){
                         //                    }
                     //                }
                 JOptionPane.showMessageDialog(null,"Patient added successfully!!!");
-                sendFromGMail("agarwalrishab34@gmail.com", "oxnndrrbavsmbxye", new String[]{toemail},"Registration Confirmation- MEDTECH HEALTH CARE","Thank you for Registaring with MedTech health care, We are here to help you!!");
-                //SmsSender.sendSms("+917875069769", "Thank you for Registaring with MedTech health care, your mobile number is registered!!");
-               
-                 //SmsSender.sendSms("+917875069769", "Thank you for Registaring with Prudence Care, your mobile number is registered sucessfully!!");
-                SmsSender.sendSms(phone, "Thank you for Registaring with Prudence Care, your mobile number is registered sucessfully!!");
-
-                
-                
+                sendFromGMail("medtech2254", "AedGroup@9", new String[]{toemail},"Registration Confirmation- MEDTECH HEALTH CARE","Thank you for Registaring with MedTech health care, We are here to help you!!");
+                SmsSender.sendSms(phone, "Thank you for Registaring with MedTech health care, your mobile number is registered!!");
                 System.out.println("email bbcm");
                 //String from, String pass, String[] to, String subject, String body
                 txtName.setText("");
@@ -1211,21 +1206,12 @@ private boolean usernamePatternCorrect(){
  private static void sendFromGMail(String from, String pass, String[] to, String subject, String body) {
         Properties props = System.getProperties();
         String host = "smtp.gmail.com";
-       
-        
-         props.put("mail.smtp.user", from);
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.host", host);
+        props.put("mail.smtp.user", from);
         props.put("mail.smtp.password", pass);
-        
-   props.put("mail.smtp.host", host);
-
-    props.put("mail.smtp.port", "587");
-
-    props.put("mail.smtp.auth", "true");
-
-    props.put("mail.smtp.ssl.protocols", "TLSv1.2");
-
-    props.put("mail.smtp.starttls.enable", "true");
-        
+        props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.auth", "true");
 
         Session session = Session.getDefaultInstance(props);
         MimeMessage message = new MimeMessage(session);

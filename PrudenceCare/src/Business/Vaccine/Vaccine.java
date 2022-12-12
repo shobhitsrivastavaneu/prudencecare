@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class Vaccine {
     

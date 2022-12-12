@@ -28,7 +28,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class ProcessTestJPanel extends javax.swing.JPanel {
 

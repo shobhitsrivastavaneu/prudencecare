@@ -28,7 +28,6 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-//import javafx.scene.chart.CategoryAxis;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -45,7 +44,7 @@ import org.jfree.data.general.DefaultPieDataset;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class MedicalDemandJPanel extends javax.swing.JPanel {
 

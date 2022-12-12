@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class VaccineTesterDirectory {
     

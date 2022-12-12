@@ -30,7 +30,7 @@ import userinterface.VaccineScientistRole.ViewVaccineJPanel;
 
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class VaccineRecordsJPanel extends javax.swing.JPanel {
 

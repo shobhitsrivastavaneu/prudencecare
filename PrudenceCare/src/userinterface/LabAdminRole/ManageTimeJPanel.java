@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 /**
  *
- * @author rishabagarwal
+ * @author Manasa
  */
 public class ManageTimeJPanel extends javax.swing.JPanel {
 
