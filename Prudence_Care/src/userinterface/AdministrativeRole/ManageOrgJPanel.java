@@ -56,11 +56,10 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
         userJButton = new javax.swing.JButton();
         manageEmployeeJButton = new javax.swing.JButton();
         manageOrganizationJButton = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        introPanel.setBackground(new java.awt.Color(51, 51, 51));
+        introPanel.setBackground(new java.awt.Color(49, 163, 222));
         introPanel.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
@@ -70,7 +69,6 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
         backJButton1.setBackground(new java.awt.Color(51, 51, 51));
         backJButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         backJButton1.setForeground(new java.awt.Color(255, 255, 255));
-        backJButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/home2.png"))); // NOI18N
         backJButton1.setText("Home");
         backJButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,7 +99,7 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
 
         pnlCard2.setBackground(new java.awt.Color(255, 255, 255));
 
-        userJButton.setBackground(new java.awt.Color(50, 57, 73));
+        userJButton.setBackground(new java.awt.Color(49, 163, 222));
         userJButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         userJButton.setForeground(new java.awt.Color(255, 255, 255));
         userJButton.setText("Manage User");
@@ -111,7 +109,7 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
             }
         });
 
-        manageEmployeeJButton.setBackground(new java.awt.Color(50, 57, 73));
+        manageEmployeeJButton.setBackground(new java.awt.Color(49, 163, 222));
         manageEmployeeJButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         manageEmployeeJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageEmployeeJButton.setText("Manage Employee");
@@ -121,7 +119,7 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
             }
         });
 
-        manageOrganizationJButton.setBackground(new java.awt.Color(50, 57, 73));
+        manageOrganizationJButton.setBackground(new java.awt.Color(49, 163, 222));
         manageOrganizationJButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         manageOrganizationJButton.setForeground(new java.awt.Color(255, 255, 255));
         manageOrganizationJButton.setText("Manage Organization");
@@ -131,39 +129,28 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/5fd1791cc2f31803167028.gif"))); // NOI18N
-
         javax.swing.GroupLayout pnlCard2Layout = new javax.swing.GroupLayout(pnlCard2);
         pnlCard2.setLayout(pnlCard2Layout);
         pnlCard2Layout.setHorizontalGroup(
             pnlCard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlCard2Layout.createSequentialGroup()
-                .addContainerGap(457, Short.MAX_VALUE)
-                .addGroup(pnlCard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlCard2Layout.createSequentialGroup()
-                        .addComponent(userJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(307, 307, 307))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlCard2Layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(223, 223, 223))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlCard2Layout.createSequentialGroup()
-                        .addGroup(pnlCard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(manageEmployeeJButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(manageOrganizationJButton, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE))
-                        .addGap(307, 307, 307))))
+                .addGap(66, 66, 66)
+                .addComponent(manageOrganizationJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(135, 135, 135)
+                .addComponent(manageEmployeeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
+                .addComponent(userJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 122, Short.MAX_VALUE))
         );
         pnlCard2Layout.setVerticalGroup(
             pnlCard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlCard2Layout.createSequentialGroup()
-                .addGap(217, 217, 217)
-                .addComponent(manageOrganizationJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(manageEmployeeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(userJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addGap(68, 68, 68)
+                .addGroup(pnlCard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(manageOrganizationJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(manageEmployeeJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(userJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(683, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -228,7 +215,6 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backJButton1;
     private javax.swing.JPanel introPanel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JButton manageEmployeeJButton;
     private javax.swing.JButton manageOrganizationJButton;
     private javax.swing.JPanel pnlCard2;

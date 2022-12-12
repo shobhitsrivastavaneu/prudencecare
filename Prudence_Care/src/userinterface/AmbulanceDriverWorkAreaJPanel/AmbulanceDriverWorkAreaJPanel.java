@@ -118,10 +118,9 @@ public class AmbulanceDriverWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(emerTable);
 
-        btnUpdate.setBackground(new java.awt.Color(102, 0, 0));
+        btnUpdate.setBackground(new java.awt.Color(49, 163, 222));
         btnUpdate.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
-        btnUpdate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/edit.png"))); // NOI18N
         btnUpdate.setText("UPDATE STATUS");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,10 +128,9 @@ public class AmbulanceDriverWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(102, 0, 0));
+        jButton1.setBackground(new java.awt.Color(49, 163, 222));
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/home_25px.png"))); // NOI18N
         jButton1.setText("Get Current Location");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,7 +139,7 @@ public class AmbulanceDriverWorkAreaJPanel extends javax.swing.JPanel {
         });
 
         jLabel2.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel2.setText("AMBULANCE DRIVER WORK PANEL");
+        jLabel2.setText("AMBULANCE DRIVER PORTAL");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -173,7 +171,7 @@ public class AmbulanceDriverWorkAreaJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnUpdate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(149, Short.MAX_VALUE))
+                .addContainerGap(166, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

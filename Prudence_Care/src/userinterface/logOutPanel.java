@@ -35,7 +35,7 @@ public class logOutPanel extends javax.swing.JPanel {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        jLabel3.setText("MEDTECH  HEALTH CARE");
+        jLabel3.setText("PRUDENCE CARE");
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/MedTechSymbol.jpg"))); // NOI18N
 
