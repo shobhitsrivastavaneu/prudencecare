@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author rishabagarwal
+ * @author Shobhit
  */
 public class VaccineEnterprise extends Enterprise {
      private VaccineDirectory vaccineDirectory;

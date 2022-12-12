@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author rishabagarwal
+ * @author Shobhit
  */
 public class PharmacyEnterprise extends Enterprise {
       private MedicineCatalog  medicineCatalog;    
