@@ -136,8 +136,6 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         }
 
         btnProcess.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        btnProcess.setForeground(new java.awt.Color(0, 102, 102));
-        btnProcess.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/newMedRequest .png"))); // NOI18N
         btnProcess.setText("SUBMIT MESSAGE");
         btnProcess.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -147,11 +145,11 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 
         txtMsg.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
 
-        introPanel.setBackground(new java.awt.Color(0, 102, 102));
+        introPanel.setBackground(new java.awt.Color(49, 163, 222));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Pharmacy DeliveryMan Portal");
+        jLabel3.setText("Pharmacy Delivery Portal");
 
         lblName.setBackground(new java.awt.Color(51, 51, 51));
         lblName.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
@@ -210,14 +208,10 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/delivselect.png"))); // NOI18N
-
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 102, 102));
         jLabel6.setText("Medicine Delivery Requests:");
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 102, 102));
         jLabel7.setText("Select the requests Delivered and Submit Message:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
