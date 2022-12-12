@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  *
- * @author rishabagarwal
+ * @author parvathypillai
  */
 public class LabTestWorkRequest {
        private Vaccine vaccine;
