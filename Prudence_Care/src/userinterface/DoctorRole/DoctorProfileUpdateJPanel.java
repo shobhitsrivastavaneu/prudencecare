@@ -109,8 +109,10 @@ public class DoctorProfileUpdateJPanel extends javax.swing.JPanel {
         jLabel11 = new javax.swing.JLabel();
         txtspcialization = new javax.swing.JTextField();
 
+        jPanel2.setBackground(new java.awt.Color(49, 163, 222));
+
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jLabel3.setText("Create Doctor Profile");
+        jLabel3.setText("New Doctor Profile");
 
         jLabel4.setText("Enter all the details and Click");
 
@@ -170,7 +172,7 @@ public class DoctorProfileUpdateJPanel extends javax.swing.JPanel {
 
         jLabel36.setText("2.3. License Number");
 
-        btnSave.setBackground(new java.awt.Color(102, 102, 102));
+        btnSave.setBackground(new java.awt.Color(49, 163, 222));
         btnSave.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         btnSave.setText("CREATE");
         btnSave.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(0, 102, 102), new java.awt.Color(204, 204, 204)));
@@ -257,7 +259,7 @@ public class DoctorProfileUpdateJPanel extends javax.swing.JPanel {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addComponent(btnBack)
-                        .addGap(227, 227, 227)
+                        .addGap(297, 297, 297)
                         .addComponent(jLabel3)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()

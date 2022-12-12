@@ -139,7 +139,6 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 102, 102));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/history.png"))); // NOI18N
         jButton1.setText("View Patient History");
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
@@ -151,7 +150,6 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
 
         btnCheckPatient.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnCheckPatient.setForeground(new java.awt.Color(0, 102, 102));
-        btnCheckPatient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/checkpatient.png"))); // NOI18N
         btnCheckPatient.setText("Check Patient ");
         btnCheckPatient.setBorderPainted(false);
         btnCheckPatient.setContentAreaFilled(false);
@@ -165,9 +163,9 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
         jLabel4.setForeground(new java.awt.Color(0, 102, 102));
         jLabel4.setText("Appointment request");
 
+        btnAvailability.setBackground(new java.awt.Color(49, 163, 222));
         btnAvailability.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnAvailability.setForeground(new java.awt.Color(0, 102, 102));
-        btnAvailability.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/availableDoc.png"))); // NOI18N
         btnAvailability.setText("Availability");
         btnAvailability.setBorderPainted(false);
         btnAvailability.setContentAreaFilled(false);
@@ -183,7 +181,6 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
 
         btnView.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         btnView.setForeground(new java.awt.Color(0, 102, 102));
-        btnView.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/update.png"))); // NOI18N
         btnView.setText("Update Doctor Profile");
         btnView.setBorderPainted(false);
         btnView.setContentAreaFilled(false);
@@ -193,7 +190,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(49, 163, 222));
 
         DocName.setBackground(new java.awt.Color(255, 255, 255));
         DocName.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -203,7 +200,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("Doctor Work Panel");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/medical_doctor_100px.png"))); // NOI18N
+        jLabel3.setBackground(new java.awt.Color(49, 163, 222));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 102));
@@ -224,7 +221,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DocName, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 234, Short.MAX_VALUE)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(DocName1, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -261,18 +258,17 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(204, 204, 204)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabel4))))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(272, 272, 272)
                         .addComponent(btnCheckPatient, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(44, 44, 44)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(157, Short.MAX_VALUE))
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(508, 508, 508)
+                        .addComponent(jLabel4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(133, 133, 133)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -284,15 +280,15 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                     .addComponent(btnView)
                     .addComponent(btnAvailability)
                     .addComponent(jLabel2))
-                .addGap(101, 101, 101)
+                .addGap(42, 42, 42)
                 .addComponent(jLabel4)
-                .addGap(18, 18, 18)
+                .addGap(34, 34, 34)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64)
+                .addGap(107, 107, 107)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnCheckPatient, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(276, Short.MAX_VALUE))
+                .addContainerGap(355, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
