@@ -15,7 +15,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 import userinterface.LabAdminRole.LabReportJPanel;
-import userinterface.DispensaryAdmin.DispensaryReportJPanel;
 import userinterface.VaccineAdminRole.VaccineCompReportJPanel;
 
 /**
@@ -574,7 +573,7 @@ public class HealthDepartmentMainAreaJPanel extends javax.swing.JPanel {
             return;
         }
          Enterprise ePrise = (Enterprise)pharmaTable.getValueAt(selectedRow, 0);
-        DispensaryReportJPanel pharreportCompJPanel = new DispensaryReportJPanel(userProcessContainer,account,ePrise,business);
+        LabReportJPanel pharreportCompJPanel = new LabReportJPanel(userProcessContainer,account,ePrise,business);
         userProcessContainer.add("pharreportCompJPanel", pharreportCompJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
