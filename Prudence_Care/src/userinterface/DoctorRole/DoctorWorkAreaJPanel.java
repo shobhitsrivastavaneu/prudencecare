@@ -107,6 +107,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
+        jTable1.setBackground(new java.awt.Color(182, 220, 237));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
@@ -137,8 +138,8 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
             jTable1.getColumnModel().getColumn(6).setResizable(false);
         }
 
+        jButton1.setBackground(new java.awt.Color(49, 193, 255));
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 102, 102));
         jButton1.setText("View Patient History");
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
@@ -148,9 +149,10 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnCheckPatient.setBackground(new java.awt.Color(49, 193, 255));
         btnCheckPatient.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnCheckPatient.setForeground(new java.awt.Color(0, 102, 102));
         btnCheckPatient.setText("Check Patient ");
+        btnCheckPatient.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnCheckPatient.setBorderPainted(false);
         btnCheckPatient.setContentAreaFilled(false);
         btnCheckPatient.addActionListener(new java.awt.event.ActionListener() {
@@ -160,12 +162,10 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
         });
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 102, 102));
         jLabel4.setText("Appointment request");
 
         btnAvailability.setBackground(new java.awt.Color(49, 163, 222));
         btnAvailability.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnAvailability.setForeground(new java.awt.Color(0, 102, 102));
         btnAvailability.setText("Availability");
         btnAvailability.setBorderPainted(false);
         btnAvailability.setContentAreaFilled(false);
@@ -176,11 +176,9 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
         });
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 102));
         jLabel2.setText("(To be update weekly)");
 
         btnView.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        btnView.setForeground(new java.awt.Color(0, 102, 102));
         btnView.setText("Update Doctor Profile");
         btnView.setBorderPainted(false);
         btnView.setContentAreaFilled(false);
@@ -197,13 +195,11 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
         DocName.setText("<value>");
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("Doctor Work Panel");
 
         jLabel3.setBackground(new java.awt.Color(49, 163, 222));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 102));
         jLabel5.setText("Hospital:");
 
         DocName1.setBackground(new java.awt.Color(255, 255, 255));
@@ -266,7 +262,7 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                         .addGap(508, 508, 508)
                         .addComponent(jLabel4))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(133, 133, 133)
+                        .addGap(111, 111, 111)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -283,10 +279,10 @@ public class DoctorWorkAreaJPanel extends javax.swing.JPanel {
                 .addGap(42, 42, 42)
                 .addComponent(jLabel4)
                 .addGap(34, 34, 34)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(107, 107, 107)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(80, 80, 80)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCheckPatient, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCheckPatient, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(355, Short.MAX_VALUE))
         );

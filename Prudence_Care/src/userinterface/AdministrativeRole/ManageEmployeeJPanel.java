@@ -98,7 +98,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        organizationJTable.setBackground(new java.awt.Color(102, 102, 102));
+        organizationJTable.setBackground(new java.awt.Color(182, 220, 237));
         organizationJTable.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         organizationJTable.setForeground(new java.awt.Color(255, 255, 255));
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -131,7 +131,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             organizationJTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        addJButton.setBackground(new java.awt.Color(0, 0, 0));
+        addJButton.setBackground(new java.awt.Color(49, 163, 222));
         addJButton.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         addJButton.setForeground(new java.awt.Color(255, 255, 255));
         addJButton.setText("Create Employee");

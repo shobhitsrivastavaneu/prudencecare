@@ -71,7 +71,7 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
         populateConditionMedDemands(); //For each condtion medicine more of demand
                 this.setSize(1466, 902);
                 introPanel.setBounds(171, 33, 1293, 101);
-        jLabel7.setBounds(1, 1, 160, 113);
+       // jLabel7.setBounds(1, 1, 160, 113);
         jTabbedPane1.setBounds(1, 115, 1228, 782);
                 lblEnterprise.setText(enterprise.getName());
         lblAccount.setText("Logged in as: "+account.getUsername());
@@ -385,7 +385,6 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
         lblEnterprise = new javax.swing.JLabel();
         lblAccount = new javax.swing.JLabel();
         backJButton1 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -416,7 +415,7 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        introPanel.setBackground(new java.awt.Color(0, 102, 102));
+        introPanel.setBackground(new java.awt.Color(49, 163, 222));
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
@@ -434,10 +433,9 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
         lblAccount.setText("Enterprise:");
         lblAccount.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        backJButton1.setBackground(new java.awt.Color(0, 102, 102));
+        backJButton1.setBackground(new java.awt.Color(182, 220, 237));
         backJButton1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         backJButton1.setForeground(new java.awt.Color(255, 255, 255));
-        backJButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/home2.png"))); // NOI18N
         backJButton1.setText("Home");
         backJButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -478,8 +476,6 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
                 .addComponent(backJButton1))
         );
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/vacreport.png"))); // NOI18N
-
         jTabbedPane1.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
         jTabbedPane1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -487,6 +483,7 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
             }
         });
 
+        newTable.setBackground(new java.awt.Color(182, 220, 237));
         newTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -526,6 +523,7 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("Recently Added Medicines", jPanel1);
 
+        covidTable.setBackground(new java.awt.Color(182, 220, 237));
         covidTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
@@ -567,7 +565,7 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("Covid Medicine Analysis", jPanel2);
 
-        ageGroupPanel.setBackground(new java.awt.Color(255, 204, 204));
+        ageGroupPanel.setBackground(new java.awt.Color(182, 220, 237));
 
         jLabel14.setText("Age-Group");
 
@@ -603,7 +601,7 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("Age-Group Medicine Analysis", jPanel3);
 
-        conditionPanel.setBackground(new java.awt.Color(255, 204, 204));
+        conditionPanel.setBackground(new java.awt.Color(182, 220, 237));
 
         jLabel12.setText("Age-Group");
 
@@ -637,7 +635,7 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("Medical Condition Analysis", jPanel5);
 
-        medDemandPanel.setBackground(new java.awt.Color(255, 204, 204));
+        medDemandPanel.setBackground(new java.awt.Color(182, 220, 237));
 
         jLabel11.setText("Age-Group");
 
@@ -677,7 +675,7 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("Medical Condition Demands", jPanel4);
 
-        demandPanel.setBackground(new java.awt.Color(255, 204, 204));
+        demandPanel.setBackground(new java.awt.Color(182, 220, 237));
 
         jLabel13.setText("Age-Group");
 
@@ -718,6 +716,7 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
             }
         });
 
+        respTable.setBackground(new java.awt.Color(182, 220, 237));
         respTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -819,8 +818,7 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(166, 166, 166)
                 .addComponent(introPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1211, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -829,10 +827,8 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(introPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(introPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60)
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 392, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(35, Short.MAX_VALUE))
         );
@@ -898,7 +894,6 @@ public class PharmaReportJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel14;

@@ -200,11 +200,10 @@ public class BookLabJPanel extends javax.swing.JPanel {
         labTestingTable = new javax.swing.JTable();
         btnResults = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
-        jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/left_50px.png"))); // NOI18N
+        btnBack.setText("BACK");
         btnBack.setBorder(null);
         btnBack.setBorderPainted(false);
         btnBack.setContentAreaFilled(false);
@@ -222,7 +221,7 @@ public class BookLabJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
         jLabel1.setText("LAB APPOINTMENT BOOKING");
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setBackground(new java.awt.Color(49, 163, 222));
         jButton1.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("View Services and Available Slots");
@@ -239,7 +238,7 @@ public class BookLabJPanel extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         jLabel2.setText("Showing Next Week Available Slots:");
 
-        slotTable.setBackground(new java.awt.Color(99, 171, 171));
+        slotTable.setBackground(new java.awt.Color(182, 220, 237));
         slotTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -257,12 +256,11 @@ public class BookLabJPanel extends javax.swing.JPanel {
             }
         });
         slotTable.setSelectionBackground(new java.awt.Color(204, 204, 204));
-        slotTable.setSelectionForeground(new java.awt.Color(0, 0, 0));
         jScrollPane1.setViewportView(slotTable);
 
         jSeparator1.setBackground(new java.awt.Color(102, 0, 0));
 
-        btnBook.setBackground(new java.awt.Color(0, 0, 0));
+        btnBook.setBackground(new java.awt.Color(49, 163, 222));
         btnBook.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         btnBook.setForeground(new java.awt.Color(255, 255, 255));
         btnBook.setText("BOOK LAB APPOINTMENT");
@@ -272,7 +270,7 @@ public class BookLabJPanel extends javax.swing.JPanel {
             }
         });
 
-        labTestingTable.setBackground(new java.awt.Color(99, 171, 171));
+        labTestingTable.setBackground(new java.awt.Color(182, 220, 237));
         labTestingTable.setForeground(new java.awt.Color(255, 255, 255));
         labTestingTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -291,10 +289,9 @@ public class BookLabJPanel extends javax.swing.JPanel {
             }
         });
         labTestingTable.setSelectionBackground(new java.awt.Color(204, 204, 204));
-        labTestingTable.setSelectionForeground(new java.awt.Color(0, 0, 0));
         jScrollPane2.setViewportView(labTestingTable);
 
-        btnResults.setBackground(new java.awt.Color(0, 0, 0));
+        btnResults.setBackground(new java.awt.Color(49, 163, 222));
         btnResults.setFont(new java.awt.Font("SansSerif", 0, 16)); // NOI18N
         btnResults.setForeground(new java.awt.Color(255, 255, 255));
         btnResults.setText("Display Lab Results");
@@ -306,9 +303,6 @@ public class BookLabJPanel extends javax.swing.JPanel {
 
         jSeparator2.setBackground(new java.awt.Color(102, 0, 0));
 
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/5fd2d0e84a02a670752073.gif"))); // NOI18N
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -316,8 +310,8 @@ public class BookLabJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(365, 365, 365)
+                        .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(274, 274, 274)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(71, 71, 71)
@@ -329,9 +323,7 @@ public class BookLabJPanel extends javax.swing.JPanel {
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 612, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnBook, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnBook, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(130, 130, 130))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
@@ -384,8 +376,7 @@ public class BookLabJPanel extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)
+                        .addGap(194, 194, 194)
                         .addComponent(btnBook, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(43, 43, 43)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -496,7 +487,6 @@ public class BookLabJPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;

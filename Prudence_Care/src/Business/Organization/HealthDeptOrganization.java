@@ -5,7 +5,6 @@
  */
 package Business.Organization;
 
-import Business.Role.FDARole;
 import Business.Role.HealthDeptRole;
 import Business.Role.Role;
 import java.util.ArrayList;

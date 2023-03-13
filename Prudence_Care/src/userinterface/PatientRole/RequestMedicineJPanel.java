@@ -221,9 +221,9 @@ String patientName = account.getUsername();
         lblCond2 = new javax.swing.JLabel();
         lblCond3 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(49, 163, 222));
 
-        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/backIcon.png"))); // NOI18N
+        btnBack.setText("BACK");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -235,10 +235,9 @@ String patientName = account.getUsername();
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 36)); // NOI18N
         jLabel1.setText("Medicine Request");
 
-        btnDisplayMed.setBackground(new java.awt.Color(0, 0, 51));
+        btnDisplayMed.setBackground(new java.awt.Color(49, 193, 255));
         btnDisplayMed.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnDisplayMed.setForeground(new java.awt.Color(255, 255, 255));
-        btnDisplayMed.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/pills_25px.png"))); // NOI18N
         btnDisplayMed.setText("Display Medicines");
         btnDisplayMed.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -246,6 +245,7 @@ String patientName = account.getUsername();
             }
         });
 
+        medTable.setBackground(new java.awt.Color(182, 220, 237));
         medTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -269,10 +269,9 @@ String patientName = account.getUsername();
 
         quant.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
 
-        btnCart.setBackground(new java.awt.Color(0, 0, 51));
+        btnCart.setBackground(new java.awt.Color(49, 193, 255));
         btnCart.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         btnCart.setForeground(new java.awt.Color(255, 255, 255));
-        btnCart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/add_shopping_cart_25px.png"))); // NOI18N
         btnCart.setText("Add to Cart");
         btnCart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -280,6 +279,7 @@ String patientName = account.getUsername();
             }
         });
 
+        medReqTable.setBackground(new java.awt.Color(182, 220, 237));
         medReqTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -301,11 +301,10 @@ String patientName = account.getUsername();
         });
         jScrollPane2.setViewportView(medReqTable);
 
-        btnSendMed.setBackground(new java.awt.Color(0, 0, 51));
+        btnSendMed.setBackground(new java.awt.Color(49, 193, 255));
         btnSendMed.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnSendMed.setForeground(new java.awt.Color(255, 255, 255));
-        btnSendMed.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/services.png"))); // NOI18N
-        btnSendMed.setText("SEND MEDICINE REQUEST");
+        btnSendMed.setText("SEND REQUEST");
         btnSendMed.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSendMedActionPerformed(evt);
@@ -313,13 +312,12 @@ String patientName = account.getUsername();
         });
 
         lblTot.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        lblTot.setForeground(new java.awt.Color(102, 0, 153));
+        lblTot.setForeground(new java.awt.Color(255, 255, 255));
         lblTot.setText("Total Price: ");
 
-        btnRemove.setBackground(new java.awt.Color(0, 0, 51));
+        btnRemove.setBackground(new java.awt.Color(49, 193, 255));
         btnRemove.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnRemove.setForeground(new java.awt.Color(255, 255, 255));
-        btnRemove.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/removeservice.png"))); // NOI18N
         btnRemove.setText("Remove From Cart");
         btnRemove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -327,10 +325,9 @@ String patientName = account.getUsername();
             }
         });
 
-        btnUpload.setBackground(new java.awt.Color(0, 0, 51));
+        btnUpload.setBackground(new java.awt.Color(49, 193, 255));
         btnUpload.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         btnUpload.setForeground(new java.awt.Color(255, 255, 255));
-        btnUpload.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/add_25px.png"))); // NOI18N
         btnUpload.setText("Upload Prescription");
         btnUpload.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -338,6 +335,7 @@ String patientName = account.getUsername();
             }
         });
 
+        respTable.setBackground(new java.awt.Color(182, 220, 237));
         respTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -356,7 +354,7 @@ String patientName = account.getUsername();
         });
         jScrollPane3.setViewportView(respTable);
 
-        btnTrack.setBackground(new java.awt.Color(0, 0, 51));
+        btnTrack.setBackground(new java.awt.Color(49, 193, 255));
         btnTrack.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnTrack.setForeground(new java.awt.Color(255, 255, 255));
         btnTrack.setText("Track Medicine Requests");
@@ -366,7 +364,7 @@ String patientName = account.getUsername();
             }
         });
 
-        btnMod.setBackground(new java.awt.Color(0, 0, 51));
+        btnMod.setBackground(new java.awt.Color(49, 193, 255));
         btnMod.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         btnMod.setForeground(new java.awt.Color(255, 255, 255));
         btnMod.setText("Modify Quantity");
@@ -398,12 +396,6 @@ String patientName = account.getUsername();
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(220, 220, 220)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -445,18 +437,26 @@ String patientName = account.getUsername();
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnRemove, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(54, 54, 54))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnTrack)
-                        .addGap(449, 449, 449))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 944, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(134, 134, 134))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnSendMed, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(294, 294, 294))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(315, 315, 315)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(512, 512, 512)
+                        .addComponent(btnTrack)))
+                .addGap(0, 451, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(130, 130, 130)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 944, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(361, 361, 361)
+                        .addComponent(btnSendMed, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -493,13 +493,13 @@ String patientName = account.getUsername();
                     .addComponent(btnCart, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnMod, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTot, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
+                .addGap(18, 18, 18)
                 .addComponent(btnSendMed, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addGap(30, 30, 30)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(30, 30, 30)
                 .addComponent(btnTrack)
-                .addGap(12, 12, 12))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

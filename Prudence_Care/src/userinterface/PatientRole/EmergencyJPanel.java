@@ -79,12 +79,20 @@ JPanel userProcessContainer;
  private static void sendFromGMail(String from, String pass, String[] to, String subject, String body) {
         Properties props = System.getProperties();
         String host = "smtp.gmail.com";
-        props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.host", host);
-        props.put("mail.smtp.user", from);
+       
+        
+         props.put("mail.smtp.user", from);
         props.put("mail.smtp.password", pass);
-        props.put("mail.smtp.port", "587");
-        props.put("mail.smtp.auth", "true");
+        
+   props.put("mail.smtp.host", host);
+
+    props.put("mail.smtp.port", "587");
+
+    props.put("mail.smtp.auth", "true");
+
+    props.put("mail.smtp.ssl.protocols", "TLSv1.2");
+
+    props.put("mail.smtp.starttls.enable", "true");
 
         Session session = Session.getDefaultInstance(props);
         MimeMessage message = new MimeMessage(session);
@@ -132,7 +140,6 @@ JPanel userProcessContainer;
         jLabel4 = new javax.swing.JLabel();
         btnShare = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        btnSubmit = new javax.swing.JButton();
         btnBack1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
 
@@ -149,10 +156,9 @@ JPanel userProcessContainer;
             }
         });
 
-        btnSend.setBackground(new java.awt.Color(0, 0, 0));
+        btnSend.setBackground(new java.awt.Color(49, 193, 255));
         btnSend.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         btnSend.setForeground(new java.awt.Color(255, 255, 255));
-        btnSend.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/hospital_50px.png"))); // NOI18N
         btnSend.setText("Send Notification to Primary Hospital");
         btnSend.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,12 +168,10 @@ JPanel userProcessContainer;
 
         jLabel4.setBackground(new java.awt.Color(0, 0, 0));
         jLabel4.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        jLabel4.setText("(Please write about the emergency)");
 
-        btnShare.setBackground(new java.awt.Color(0, 0, 0));
+        btnShare.setBackground(new java.awt.Color(49, 193, 255));
         btnShare.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         btnShare.setForeground(new java.awt.Color(255, 255, 255));
-        btnShare.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/maps_50px.png"))); // NOI18N
         btnShare.setText("Share patients address");
         btnShare.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,17 +182,6 @@ JPanel userProcessContainer;
         jLabel1.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
         jLabel1.setText("EMERGENCY REQUEST");
 
-        btnSubmit.setBackground(new java.awt.Color(50, 9, 27));
-        btnSubmit.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
-        btnSubmit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/ambulance_50px.png"))); // NOI18N
-        btnSubmit.setText("SUBMIT REQUEST!");
-        btnSubmit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSubmitActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -196,48 +189,43 @@ JPanel userProcessContainer;
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(216, 216, 216)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(txtMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(106, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 134, Short.MAX_VALUE)
                         .addComponent(jLabel2)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 673, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(98, 98, 98))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(btnSend, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnShare, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(183, 183, 183))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(282, 282, 282))))
+                        .addGap(85, 85, 85)
+                        .addComponent(txtMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(302, 302, 302))
+                    .addComponent(jLabel4)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(481, 481, 481))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(250, 250, 250)
+                .addComponent(btnSend, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(81, 81, 81)
+                .addComponent(btnShare, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(41, 41, 41)
+                .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(95, 95, 95)
+                .addGap(52, 52, 52)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(62, 62, 62)
                 .addComponent(jLabel4)
-                .addGap(64, 64, 64)
-                .addComponent(btnSend, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnShare, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSend, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnShare, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(271, Short.MAX_VALUE))
         );
 
-        btnBack1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/back_to_50px.png"))); // NOI18N
+        btnBack1.setText("BACK");
         btnBack1.setBorder(null);
         btnBack1.setBorderPainted(false);
         btnBack1.setContentAreaFilled(false);
@@ -247,7 +235,7 @@ JPanel userProcessContainer;
             }
         });
 
-        jPanel2.setBackground(new java.awt.Color(50, 9, 27));
+        jPanel2.setBackground(new java.awt.Color(49, 193, 255));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -270,7 +258,7 @@ JPanel userProcessContainer;
                 .addComponent(btnBack1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(139, Short.MAX_VALUE))
+                .addContainerGap(100, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -280,152 +268,9 @@ JPanel userProcessContainer;
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnBack1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(82, Short.MAX_VALUE))
+                .addContainerGap(88, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
-        // TODO add your handling code here:
-        
-         String address1=patient.getAddress1();
-        String address2=patient.getAddress2();
-        String address3=patient.getAddress3();
-        String combined = address1+" "+address2+" "+address3;
-        String[] split=combined.split(" ");
-        String name = "";
-        String names="";
-        String nameFinal = "";
-        int numberOfItems = split.length;
-        System.out.println(combined);
-        for (int i=numberOfItems-1; i>=0; i--)
-        {
-            if(i>0){
-
-                String first =  split[i] ;
-                name =  first + "+"+ name ;
-
-            }
-            else{
-                String first =  split[i] ;
-                names = first+"+"+name;
-            }
-        }
-        names = names.substring(0, names.length()-1);
-
-        location = names;
-        
-        
-        UserAccount ambAccount = null;
-        if(txtMsg.getText().equals("")){
-            JOptionPane.showMessageDialog(null,"Detailed Message is mandatory!", "Warning", JOptionPane.WARNING_MESSAGE);
-            return;
-
-        }
-        
-        EmergencyRequest request = new EmergencyRequest();
-        request.setEnterprise(patient.getPrimaryHospital());
-        request.setHospital(patient.getPrimaryHospital());
-        request.setMsg(txtMsg.getText());
-        request.setLocation(location);
-        request.setSender(account);
-        Map<String,Date> reqMap = request.getStatusMap();
-        reqMap.put("Emergency Request created!", new Date());
-        request.setStatusMap(reqMap);
-        request.setEnterprise(patient.getPrimaryHospital());
-        ecosystem.getEmergencyQueue().addEmergencyRequest(request);
-        List<UserAccount> ambList = new ArrayList<UserAccount>();
-        for (Network network : ecosystem.getNetworkList()){
-            for (Enterprise enterpriseCheck : network.getEnterpriseDirectory().getEnterpriseList()){
-                if(enterpriseCheck.getName().equals(patient.getPrimaryHospital())){
-                    for(Organization org : enterpriseCheck.getOrganizationDirectory().getOrganizationList()){
-                    for (UserAccount ua : org.getUserAccountDirectory().getUserAccountList()) {
-                        if(ua.getRole().toString().equals("AmbulanceDriver")){
-                          //  ua.getEmergencyQueue().addEmergencyRequest(request);
-                            ambList.add(ua);
-                        }
-                    }
-                    }
-                }
-            }
-        }
-        int cases = 0;
-        for(UserAccount u : ambList){
-            if(cases == 0){
-                cases = u.getEmergencyQueue().getEmergencyRequestList().size();
-                ambAccount  = u;
-            }else{
-                if(cases > u.getEmergencyQueue().getEmergencyRequestList().size()){
-                    ambAccount  = u;
-                    cases = u.getEmergencyQueue().getEmergencyRequestList().size();
-            }                
-            }
-
-        }
-        
-        ambAccount.getEmergencyQueue().addEmergencyRequest(request);
-        reqMap.put("Request sent to ambulance-!"+ambAccount, new Date());
-                List<Product> productList = ecosystem.getProductCatalog().getProductcatalog(); 
-        String room = "";  
-        int ICURoom = 0;
-        int deluxRoom = 0;
-        int generalRoom = 0;
-        for(Product p: productList){
-            if(p.getProdName().equalsIgnoreCase("ICU")){
-                generalRoom = p.getAvail();
-                int roomQuant = p.getAvail();
-                if(roomQuant > 0){
-                    room = p.getProdName();
-                    int newQuant = (roomQuant-1);
-                    if(newQuant < 0){
-                        p.setAvail(0);
-                    }else{
-                        p.setAvail(newQuant);
-                    }
-                }
-            }
-        }
-        if(room.equals("")){
-          for(Product p: productList){
-            if(p.getProdName().equalsIgnoreCase("delux Room")|| p.getProdName().equalsIgnoreCase("dr") ){
-                generalRoom = p.getAvail();
-                int roomQuant = p.getAvail();
-                if(roomQuant > 0){
-                    room = p.getProdName();
-                    int newQuant = (roomQuant-1);
-                    if(newQuant < 0){
-                        p.setAvail(0);
-                    }else{
-                        p.setAvail(newQuant);
-                    }
-                }
-            }
-        }
-        }
-        
-        if(room.equals("")){
-                 for(Product p: productList){
-            if(p.getProdName().equalsIgnoreCase("General Room")|| p.getProdName().equalsIgnoreCase("gr") ){
-                generalRoom = p.getAvail();
-                int roomQuant = p.getAvail();
-                if(roomQuant > 0){
-                    room = p.getProdName();
-                    int newQuant = (roomQuant-1);
-                    if(newQuant < 0){
-                        p.setAvail(0);
-                    }else{
-                        p.setAvail(newQuant);
-                    }
-                }
-            }
-        }   
-            
-        }
-
-
-
-        ecosystem.getEmergencyQueue().updateEmergencyRequest(request, ecosystem.getEmergencyQueue().getEmergencyRequestList());
-     JOptionPane.showMessageDialog(null,"Request submitted!\nHospital -"+patient.getPrimaryHospital()+" has been notified, "+room+" has been booked and Ambulance -"+ambAccount+" is on the way!", "Information", JOptionPane.INFORMATION_MESSAGE);
-    }//GEN-LAST:event_btnSubmitActionPerformed
 
     private void btnBack1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack1ActionPerformed
         // TODO add your handling code here:
@@ -481,7 +326,7 @@ JPanel userProcessContainer;
         }
         int room = 0;
         String msg = "Notified Primary hospital -"+patient.getPrimaryHospital();
-                       sendFromGMail("medtech2254", "AedGroup@9", new String[]{"rishabagarwalsajeev@gmail.com"},"HIGH-PRIORITY!!! -Emergency Request Raised!","Emergency Request has been raised to your hospital! Patient has been allocated room and hospital Notified. Immediate Action Required.");
+                       sendFromGMail("agarwalrishab34@gmail.com", "oxnndrrbavsmbxye", new String[]{"rishabhagarwal14628@gmail.com"},"HIGH-PRIORITY!!! -Emergency Request Raised!","Emergency Request has been raised to your hospital! Patient has been allocated room and hospital Notified. Immediate Action Required.");
                 JOptionPane.showMessageDialog(null,msg, "Confirmation", JOptionPane.INFORMATION_MESSAGE);
              
     }//GEN-LAST:event_btnSendActionPerformed
@@ -495,7 +340,6 @@ JPanel userProcessContainer;
     private javax.swing.JButton btnBack1;
     private javax.swing.JButton btnSend;
     private javax.swing.JButton btnShare;
-    private javax.swing.JButton btnSubmit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;

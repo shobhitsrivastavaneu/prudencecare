@@ -78,10 +78,10 @@ public class ManageServicesJPanel extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
+        serviceTable.setBackground(new java.awt.Color(49, 163, 222));
         serviceTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null},
@@ -109,7 +109,6 @@ public class ManageServicesJPanel extends javax.swing.JPanel {
 
         btnServices.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnServices.setForeground(new java.awt.Color(0, 102, 102));
-        btnServices.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/addServices.png"))); // NOI18N
         btnServices.setText("ADD SERVICE");
         btnServices.setBorderPainted(false);
         btnServices.setContentAreaFilled(false);
@@ -121,7 +120,6 @@ public class ManageServicesJPanel extends javax.swing.JPanel {
 
         btnRemove.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         btnRemove.setForeground(new java.awt.Color(0, 102, 102));
-        btnRemove.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/removeservice.png"))); // NOI18N
         btnRemove.setText("    REMOVE SERVICE");
         btnRemove.setBorderPainted(false);
         btnRemove.setContentAreaFilled(false);
@@ -131,7 +129,7 @@ public class ManageServicesJPanel extends javax.swing.JPanel {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(49, 163, 222));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
@@ -146,15 +144,12 @@ public class ManageServicesJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/updateservices.png"))); // NOI18N
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(118, 118, 118)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 536, Short.MAX_VALUE)
                 .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -162,12 +157,12 @@ public class ManageServicesJPanel extends javax.swing.JPanel {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1)))
+                    .addComponent(jLabel1))
+                .addGap(30, 30, 30))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -266,7 +261,6 @@ public class ManageServicesJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnServices;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable serviceTable;

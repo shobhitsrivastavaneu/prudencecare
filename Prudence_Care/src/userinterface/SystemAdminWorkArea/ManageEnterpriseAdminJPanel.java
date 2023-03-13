@@ -9,12 +9,9 @@ import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Role.AdminRole;
-import Business.Role.FDARole;
 import Business.Role.InsuranceAdminRole;
 import Business.Role.LabAdminRole;
-import Business.Role.ManufactureAdminRole;
 import Business.Role.PharmacyAdminRole;
-import Business.Role.VaccineAdminRole;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Color;
@@ -174,7 +171,6 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
             }
         });
 
-        submitJButton.setBackground(new java.awt.Color(255, 255, 255));
         submitJButton.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         submitJButton.setText("Submit");
         submitJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -193,7 +189,6 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
 
         passwordJPasswordField.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
 
-        btnRem.setBackground(new java.awt.Color(255, 255, 255));
         btnRem.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         btnRem.setText("Remove User");
         btnRem.addActionListener(new java.awt.event.ActionListener() {
@@ -202,7 +197,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(217, 185, 41));
+        jPanel1.setBackground(new java.awt.Color(49, 193, 255));
 
         backJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/back_to_50px_1.png"))); // NOI18N
         backJButton.setBorder(null);
@@ -221,7 +216,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(backJButton)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(1165, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -240,7 +235,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 455, Short.MAX_VALUE)
+                .addGap(0, 458, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
                     .addComponent(jLabel1)
@@ -391,22 +386,13 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         }else if(enterprise.getEnterpriseType().getValue().equals("Laboratory")){
          UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new LabAdminRole());           
 
-        }else if(enterprise.getEnterpriseType().getValue().equals("VaccineCompany")){
-         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new VaccineAdminRole());           
-        
-         }else if(enterprise.getEnterpriseType().equals(enterprise.getEnterpriseType().Insurance)){
+        }else if(enterprise.getEnterpriseType().equals(enterprise.getEnterpriseType().Insurance)){
          UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new InsuranceAdminRole());  
          
-         }else if(enterprise.getEnterpriseType().equals(enterprise.getEnterpriseType().FDA)){
-         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new FDARole());  
          
-         }else if(enterprise.getEnterpriseType().equals(enterprise.getEnterpriseType().Hospital)){
+        }else if(enterprise.getEnterpriseType().equals(enterprise.getEnterpriseType().Hospital)){
            
          UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new AdminRole());  
-         
-        }else if(enterprise.getEnterpriseType().equals(enterprise.getEnterpriseType().DrugManufacturer)){
-           
-         UserAccount account = enterprise.getUserAccountDirectory().createUserAccount(username, password, employee, new ManufactureAdminRole());  
          
         }
          JOptionPane.showMessageDialog(null, "Admin account added successfully!");

@@ -193,14 +193,13 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
         jScrollPane3 = new javax.swing.JScrollPane();
         tblClaim = new javax.swing.JTable();
         jButton3 = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(0, 0, 0));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tab.setBackground(new java.awt.Color(35, 33, 54));
+        tab.setBackground(new java.awt.Color(49, 163, 222));
 
-        btnInsuranceRegistration.setBackground(new java.awt.Color(73, 42, 63));
+        btnInsuranceRegistration.setBackground(new java.awt.Color(49, 163, 222));
         btnInsuranceRegistration.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         btnInsuranceRegistration.setForeground(new java.awt.Color(255, 255, 255));
         btnInsuranceRegistration.setText("Insurance Registraton ");
@@ -214,7 +213,7 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnInsuranceClaim.setBackground(new java.awt.Color(107, 60, 52));
+        btnInsuranceClaim.setBackground(new java.awt.Color(49, 163, 222));
         btnInsuranceClaim.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         btnInsuranceClaim.setForeground(new java.awt.Color(255, 255, 255));
         btnInsuranceClaim.setText("Insurance Claim");
@@ -267,9 +266,8 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
 
         pnl2.setBackground(new java.awt.Color(255, 255, 255));
 
-        btnRegisterForInsurance.setBackground(new java.awt.Color(73, 42, 63));
+        btnRegisterForInsurance.setBackground(new java.awt.Color(49, 193, 255));
         btnRegisterForInsurance.setFont(new java.awt.Font("SansSerif", 0, 20)); // NOI18N
-        btnRegisterForInsurance.setForeground(new java.awt.Color(255, 255, 255));
         btnRegisterForInsurance.setText("Register for Insurance");
         btnRegisterForInsurance.setBorder(null);
         btnRegisterForInsurance.addActionListener(new java.awt.event.ActionListener() {
@@ -281,7 +279,7 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         jLabel1.setText("If registered, please find the insurance poliy status below:");
 
-        tblStatus.setBackground(new java.awt.Color(73, 42, 63));
+        tblStatus.setBackground(new java.awt.Color(182, 220, 237));
         tblStatus.setForeground(new java.awt.Color(255, 255, 255));
         tblStatus.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -300,7 +298,6 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         tblStatus.setSelectionBackground(new java.awt.Color(255, 255, 255));
-        tblStatus.setSelectionForeground(new java.awt.Color(0, 0, 0));
         jScrollPane1.setViewportView(tblStatus);
         if (tblStatus.getColumnModel().getColumnCount() > 0) {
             tblStatus.getColumnModel().getColumn(0).setResizable(false);
@@ -310,29 +307,26 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
             tblStatus.getColumnModel().getColumn(4).setResizable(false);
         }
 
-        btnCancelInsurance.setBackground(new java.awt.Color(73, 42, 63));
+        btnCancelInsurance.setBackground(new java.awt.Color(49, 193, 255));
         btnCancelInsurance.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        btnCancelInsurance.setForeground(new java.awt.Color(255, 255, 255));
-        btnCancelInsurance.setText("Cancel the registered insurance policy");
+        btnCancelInsurance.setText("Cancel Insurance Policy");
         btnCancelInsurance.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCancelInsuranceActionPerformed(evt);
             }
         });
 
-        btnView.setBackground(new java.awt.Color(73, 42, 63));
+        btnView.setBackground(new java.awt.Color(49, 193, 255));
         btnView.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        btnView.setForeground(new java.awt.Color(255, 255, 255));
-        btnView.setText("View Insurance Policy Details");
+        btnView.setText("View Details");
         btnView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(73, 42, 63));
+        jButton2.setBackground(new java.awt.Color(49, 193, 255));
         jButton2.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Refresh");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -348,9 +342,8 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
 
         jComboBoxHospitalList.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
 
-        btnSubmit.setBackground(new java.awt.Color(73, 42, 63));
+        btnSubmit.setBackground(new java.awt.Color(49, 193, 255));
         btnSubmit.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
         btnSubmit.setText("Submit");
         btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -367,11 +360,6 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
             pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl2Layout.createSequentialGroup()
                 .addGroup(pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnl2Layout.createSequentialGroup()
-                        .addGap(336, 336, 336)
-                        .addComponent(jLabel4)
-                        .addGap(112, 112, 112)
-                        .addComponent(txtPrimaryDoctor))
                     .addGroup(pnl2Layout.createSequentialGroup()
                         .addGap(238, 238, 238)
                         .addComponent(jComboBoxHospitalList, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -391,12 +379,22 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
                                     .addComponent(jButton2))))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnl2Layout.createSequentialGroup()
                             .addGap(110, 110, 110)
-                            .addGroup(pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnl2Layout.createSequentialGroup()
-                                    .addComponent(btnCancelInsurance)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnView))
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 771, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 771, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(pnl2Layout.createSequentialGroup()
+                        .addGroup(pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnl2Layout.createSequentialGroup()
+                                .addGap(336, 336, 336)
+                                .addComponent(jLabel4))
+                            .addGroup(pnl2Layout.createSequentialGroup()
+                                .addGap(204, 204, 204)
+                                .addComponent(btnCancelInsurance, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnl2Layout.createSequentialGroup()
+                                .addGap(112, 112, 112)
+                                .addComponent(txtPrimaryDoctor))
+                            .addGroup(pnl2Layout.createSequentialGroup()
+                                .addGap(32, 32, 32)
+                                .addComponent(btnView, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(389, Short.MAX_VALUE))
         );
         pnl2Layout.setVerticalGroup(
@@ -412,9 +410,9 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(49, 49, 49)
                 .addGroup(pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCancelInsurance)
-                    .addComponent(btnView))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
+                    .addComponent(btnView, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCancelInsurance, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                 .addGroup(pnl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(txtPrimaryDoctor))
@@ -434,7 +432,7 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
         jLabel3.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
         jLabel3.setText("INSURANCE CLAIM STATUS");
 
-        tblClaim.setBackground(new java.awt.Color(73, 42, 63));
+        tblClaim.setBackground(new java.awt.Color(182, 220, 237));
         tblClaim.setForeground(new java.awt.Color(255, 255, 255));
         tblClaim.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -454,17 +452,14 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
         });
         tblClaim.setFocusable(false);
         tblClaim.setSelectionBackground(new java.awt.Color(255, 255, 255));
-        tblClaim.setSelectionForeground(new java.awt.Color(0, 0, 0));
         jScrollPane3.setViewportView(tblClaim);
 
         jButton3.setBackground(new java.awt.Color(35, 33, 54));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/available_updates_40px.png"))); // NOI18N
+        jButton3.setText("REFRESH");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
         jButton3.setContentAreaFilled(false);
         jButton3.setFocusable(false);
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Capture123.PNG"))); // NOI18N
 
         javax.swing.GroupLayout pnl1Layout = new javax.swing.GroupLayout(pnl1);
         pnl1.setLayout(pnl1Layout);
@@ -478,29 +473,22 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
                     .addGroup(pnl1Layout.createSequentialGroup()
                         .addGap(129, 129, 129)
                         .addGroup(pnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 671, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(pnl1Layout.createSequentialGroup()
-                                .addGap(236, 236, 236)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(77, 77, 77)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGap(561, 561, 561)
+                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 671, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(470, Short.MAX_VALUE))
         );
         pnl1Layout.setVerticalGroup(
             pnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl1Layout.createSequentialGroup()
                 .addContainerGap(62, Short.MAX_VALUE)
-                .addGroup(pnl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl1Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(41, 41, 41)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(128, 128, 128)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(165, 165, 165))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl1Layout.createSequentialGroup()
-                        .addComponent(jButton3)
-                        .addGap(464, 464, 464))))
+                .addComponent(jLabel3)
+                .addGap(41, 41, 41)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(464, 464, 464))
         );
 
         pnl.add(pnl1, "card2");
@@ -665,7 +653,6 @@ public class PatientInsuranceWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JPanel pnl;

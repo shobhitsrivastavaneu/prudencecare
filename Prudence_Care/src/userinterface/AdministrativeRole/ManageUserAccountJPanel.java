@@ -144,7 +144,7 @@ private boolean card;
         setBackground(new java.awt.Color(255, 255, 255));
 
         backjButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        backjButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/back_to_501px.png"))); // NOI18N
+        backjButton1.setText("BACK");
         backjButton1.setBorder(null);
         backjButton1.setBorderPainted(false);
         backjButton1.setContentAreaFilled(false);
@@ -164,7 +164,7 @@ private boolean card;
             }
         });
 
-        userJTable.setBackground(new java.awt.Color(49, 163, 222));
+        userJTable.setBackground(new java.awt.Color(182, 220, 237));
         userJTable.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         userJTable.setForeground(new java.awt.Color(255, 255, 255));
         userJTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -244,7 +244,7 @@ private boolean card;
         jLabel2.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
         jLabel2.setText("NEW USER");
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(51, 204, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -333,7 +333,7 @@ private boolean card;
                     .addComponent(passwordJTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(createUserJButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnRem, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))

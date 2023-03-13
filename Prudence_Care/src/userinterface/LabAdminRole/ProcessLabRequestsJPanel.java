@@ -112,12 +112,14 @@ public class ProcessLabRequestsJPanel extends javax.swing.JPanel {
         lblAccount = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(49, 163, 222));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("Upcoming Lab Tests:");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
 
+        labTestingTable.setBackground(new java.awt.Color(182, 220, 237));
         labTestingTable.setForeground(new java.awt.Color(0, 102, 102));
         labTestingTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -140,9 +142,9 @@ public class ProcessLabRequestsJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(labTestingTable);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(84, 155, 922, 265));
+
         btnAssignLabReq1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnAssignLabReq1.setForeground(new java.awt.Color(0, 102, 102));
-        btnAssignLabReq1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/request.png"))); // NOI18N
         btnAssignLabReq1.setText("Assign Lab Requests");
         btnAssignLabReq1.setBorderPainted(false);
         btnAssignLabReq1.setContentAreaFilled(false);
@@ -151,6 +153,7 @@ public class ProcessLabRequestsJPanel extends javax.swing.JPanel {
                 btnAssignLabReq1ActionPerformed(evt);
             }
         });
+        add(btnAssignLabReq1, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 542, -1, 42));
 
         staffComboBox.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
         staffComboBox.setForeground(new java.awt.Color(0, 102, 102));
@@ -160,16 +163,18 @@ public class ProcessLabRequestsJPanel extends javax.swing.JPanel {
                 staffComboBoxActionPerformed(evt);
             }
         });
+        add(staffComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(972, 548, 144, 32));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel3.setForeground(new java.awt.Color(49, 163, 222));
         jLabel3.setText("TestingStaff");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(892, 556, -1, -1));
 
         lblAccount.setBackground(new java.awt.Color(51, 51, 51));
         lblAccount.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        lblAccount.setForeground(new java.awt.Color(0, 102, 102));
         lblAccount.setText("Enterprise:");
         lblAccount.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        add(lblAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(593, 15, 210, 30));
 
         backJButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/back.png"))); // NOI18N
         backJButton.setBorderPainted(false);
@@ -179,50 +184,7 @@ public class ProcessLabRequestsJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(329, 329, 329)
-                        .addComponent(lblAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 266, Short.MAX_VALUE)
-                        .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(btnAssignLabReq1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(staffComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(84, 84, 84)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 922, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jLabel1))
-                    .addComponent(backJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblAccount, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(111, 111, 111)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAssignLabReq1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3)
-                    .addComponent(staffComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(954, 0, 162, 44));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAssignLabReq1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignLabReq1ActionPerformed

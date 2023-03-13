@@ -292,7 +292,7 @@ public class CreatePolicyWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(txtPolicyMax, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 170, 120, -1));
 
-        btnCreate.setBackground(new java.awt.Color(0, 0, 0));
+        btnCreate.setBackground(new java.awt.Color(49, 163, 222));
         btnCreate.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         btnCreate.setForeground(new java.awt.Color(255, 255, 255));
         btnCreate.setText("Create Policy");
@@ -315,7 +315,7 @@ public class CreatePolicyWorkAreaJPanel extends javax.swing.JPanel {
         jComboHospital.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         add(jComboHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 590, 170, -1));
 
-        btnAddHospital.setBackground(new java.awt.Color(0, 0, 0));
+        btnAddHospital.setBackground(new java.awt.Color(49, 163, 222));
         btnAddHospital.setForeground(new java.awt.Color(255, 255, 255));
         btnAddHospital.setText("Add");
         btnAddHospital.addActionListener(new java.awt.event.ActionListener() {
@@ -328,7 +328,7 @@ public class CreatePolicyWorkAreaJPanel extends javax.swing.JPanel {
         jComboLaboratories.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         add(jComboLaboratories, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 630, 170, -1));
 
-        btnAddLaboratory.setBackground(new java.awt.Color(0, 0, 0));
+        btnAddLaboratory.setBackground(new java.awt.Color(49, 163, 222));
         btnAddLaboratory.setForeground(new java.awt.Color(255, 255, 255));
         btnAddLaboratory.setText("Add");
         btnAddLaboratory.addActionListener(new java.awt.event.ActionListener() {
@@ -341,7 +341,7 @@ public class CreatePolicyWorkAreaJPanel extends javax.swing.JPanel {
         jComboPharmacy.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
         add(jComboPharmacy, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 670, 170, -1));
 
-        btnAddPharmacy.setBackground(new java.awt.Color(0, 0, 0));
+        btnAddPharmacy.setBackground(new java.awt.Color(49, 163, 222));
         btnAddPharmacy.setForeground(new java.awt.Color(255, 255, 255));
         btnAddPharmacy.setText("Add");
         btnAddPharmacy.addActionListener(new java.awt.event.ActionListener() {
@@ -434,7 +434,7 @@ public class CreatePolicyWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(checkBoxIndividual, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 130, -1, -1));
 
-        btnSubmit.setBackground(new java.awt.Color(0, 0, 0));
+        btnSubmit.setBackground(new java.awt.Color(49, 163, 222));
         btnSubmit.setFont(new java.awt.Font("SansSerif", 1, 16)); // NOI18N
         btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
         btnSubmit.setText("Submit");
@@ -456,7 +456,7 @@ public class CreatePolicyWorkAreaJPanel extends javax.swing.JPanel {
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
         add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 1110, 10));
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(49, 163, 222));
 
         jLabel1.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));

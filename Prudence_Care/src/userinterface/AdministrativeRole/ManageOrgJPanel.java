@@ -62,11 +62,11 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
         introPanel.setBackground(new java.awt.Color(49, 163, 222));
         introPanel.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Organization Management");
 
-        backJButton1.setBackground(new java.awt.Color(51, 51, 51));
+        backJButton1.setBackground(new java.awt.Color(51, 153, 255));
         backJButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         backJButton1.setForeground(new java.awt.Color(255, 255, 255));
         backJButton1.setText("Home");
@@ -81,9 +81,9 @@ public class ManageOrgJPanel extends javax.swing.JPanel {
         introPanelLayout.setHorizontalGroup(
             introPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, introPanelLayout.createSequentialGroup()
-                .addContainerGap(393, Short.MAX_VALUE)
+                .addContainerGap(228, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(82, 82, 82)
+                .addGap(208, 208, 208)
                 .addComponent(backJButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(119, 119, 119))
         );

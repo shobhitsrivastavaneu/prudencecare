@@ -93,7 +93,6 @@ public void populateEssentialTable(){
 
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         btnCreate = new javax.swing.JButton();
         btnView = new javax.swing.JButton();
@@ -111,58 +110,51 @@ public void populateEssentialTable(){
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 204));
+        jPanel3.setBackground(new java.awt.Color(49, 163, 222));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 102));
         jLabel2.setText("Hospital Staff- Essentials Management");
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/staff.png"))); // NOI18N
-
-        jPanel2.setBackground(new java.awt.Color(255, 255, 204));
+        jPanel2.setBackground(new java.awt.Color(49, 163, 222));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnCreate.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnCreate.setForeground(new java.awt.Color(0, 102, 102));
-        btnCreate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/addProduct.png"))); // NOI18N
         btnCreate.setText("Add");
+        btnCreate.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnCreate.setContentAreaFilled(false);
         btnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreateActionPerformed(evt);
             }
         });
-        jPanel2.add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 90, 160, 70));
+        jPanel2.add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 80, 180, 70));
 
         btnView.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnView.setForeground(new java.awt.Color(0, 102, 102));
-        btnView.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/viewProduct.png"))); // NOI18N
         btnView.setText("View");
+        btnView.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnView.setContentAreaFilled(false);
         btnView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewActionPerformed(evt);
             }
         });
-        jPanel2.add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 180, 190, 70));
+        jPanel2.add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 190, 180, 70));
 
+        btnDelete.setBackground(new java.awt.Color(0, 0, 0));
         btnDelete.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnDelete.setForeground(new java.awt.Color(0, 102, 102));
-        btnDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/deleteProduct.png"))); // NOI18N
         btnDelete.setText("Delete");
-        btnDelete.setBorderPainted(false);
+        btnDelete.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         btnDelete.setContentAreaFilled(false);
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
             }
         });
-        jPanel2.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 250, 180, -1));
+        jPanel2.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 310, 180, 70));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 51, 51));
         jLabel1.setText("General Room");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 460, -1, 20));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, -1, 20));
 
         txtRoomCount.setText(" ");
         txtRoomCount.addActionListener(new java.awt.event.ActionListener() {
@@ -170,30 +162,27 @@ public void populateEssentialTable(){
                 txtRoomCountActionPerformed(evt);
             }
         });
-        jPanel2.add(txtRoomCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 460, 140, 20));
+        jPanel2.add(txtRoomCount, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 420, 140, 20));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 51, 51));
         jLabel3.setText("Room Avaliability Count");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 210, 20));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 210, 20));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 51, 51));
         jLabel4.setText("ICU ");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 500, -1, 20));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, -1, 20));
 
         txtICU.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtICUActionPerformed(evt);
             }
         });
-        jPanel2.add(txtICU, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 500, 140, 20));
+        jPanel2.add(txtICU, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 460, 140, 20));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 51, 51));
         jLabel5.setText("Deluxe Room");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 540, -1, 20));
-        jPanel2.add(txtDeluxe, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 540, 140, 20));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, -1, 20));
+        jPanel2.add(txtDeluxe, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 500, 140, 20));
 
         essentialTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -212,32 +201,27 @@ public void populateEssentialTable(){
         essentialTable.setSelectionBackground(new java.awt.Color(153, 255, 153));
         jScrollPane1.setViewportView(essentialTable);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 390, 90));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 540, 130));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/hospital_room.png"))); // NOI18N
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, -1, -1));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-110, 330, -1, -1));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(jLabel6)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
+                        .addGap(160, 160, 160)
                         .addComponent(jLabel2))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(200, 200, 200)
+                        .addGap(342, 342, 342)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 847, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(210, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel6)
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(38, 38, 38)
                 .addComponent(jLabel2)
@@ -332,7 +316,6 @@ public void populateEssentialTable(){
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

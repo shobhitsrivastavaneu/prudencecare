@@ -70,15 +70,13 @@ InsuranceAdminOrganization iOrg;
         jLabel9 = new javax.swing.JLabel();
         lblUsername = new javax.swing.JLabel();
         lblUsername1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setForeground(new java.awt.Color(236, 239, 246));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton3.setBackground(new java.awt.Color(0, 153, 153));
+        jButton3.setBackground(new java.awt.Color(49, 163, 222));
         jButton3.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/icon.png"))); // NOI18N
         jButton3.setText("Hospital Appointment ");
         jButton3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton3.setContentAreaFilled(false);
@@ -93,9 +91,8 @@ InsuranceAdminOrganization iOrg;
         });
         add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 460, 250, 300));
 
-        btnRegisterForInsurance.setBackground(new java.awt.Color(89, 194, 180));
+        btnRegisterForInsurance.setBackground(new java.awt.Color(49, 163, 222));
         btnRegisterForInsurance.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        btnRegisterForInsurance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Capture1234.jpg"))); // NOI18N
         btnRegisterForInsurance.setText("Insurance Details");
         btnRegisterForInsurance.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnRegisterForInsurance.setContentAreaFilled(false);
@@ -109,9 +106,8 @@ InsuranceAdminOrganization iOrg;
         });
         add(btnRegisterForInsurance, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 70, 250, 300));
 
-        btnEmergency.setBackground(new java.awt.Color(181, 198, 189));
+        btnEmergency.setBackground(new java.awt.Color(49, 163, 222));
         btnEmergency.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        btnEmergency.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/5fd285314732b759274096.gif"))); // NOI18N
         btnEmergency.setText("Emergency- Ambulance ");
         btnEmergency.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnEmergency.setContentAreaFilled(false);
@@ -125,9 +121,8 @@ InsuranceAdminOrganization iOrg;
         });
         add(btnEmergency, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 460, 250, 300));
 
-        btnBookLab.setBackground(new java.awt.Color(240, 249, 248));
+        btnBookLab.setBackground(new java.awt.Color(49, 163, 222));
         btnBookLab.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        btnBookLab.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/5fd2812219e7c897593536.gif"))); // NOI18N
         btnBookLab.setText("Book Appointment for Lab");
         btnBookLab.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnBookLab.setContentAreaFilled(false);
@@ -141,9 +136,8 @@ InsuranceAdminOrganization iOrg;
         });
         add(btnBookLab, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 70, 250, 300));
 
-        btnMedReq.setBackground(new java.awt.Color(221, 221, 221));
+        btnMedReq.setBackground(new java.awt.Color(49, 163, 222));
         btnMedReq.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        btnMedReq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/5fd2854932bed868141739.gif"))); // NOI18N
         btnMedReq.setText("Send Medicine Request");
         btnMedReq.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnMedReq.setContentAreaFilled(false);
@@ -157,9 +151,8 @@ InsuranceAdminOrganization iOrg;
         });
         add(btnMedReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 460, 250, 300));
 
-        btnPatientHistory.setBackground(new java.awt.Color(86, 111, 165));
+        btnPatientHistory.setBackground(new java.awt.Color(49, 163, 222));
         btnPatientHistory.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        btnPatientHistory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/Capture12345.jpg"))); // NOI18N
         btnPatientHistory.setText("Patient History");
         btnPatientHistory.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnPatientHistory.setContentAreaFilled(false);
@@ -173,7 +166,7 @@ InsuranceAdminOrganization iOrg;
         });
         add(btnPatientHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 70, 250, 300));
 
-        jPanel2.setBackground(new java.awt.Color(88, 98, 97));
+        jPanel2.setBackground(new java.awt.Color(49, 163, 222));
 
         jLabel9.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -186,15 +179,12 @@ InsuranceAdminOrganization iOrg;
         lblUsername1.setForeground(new java.awt.Color(255, 255, 255));
         lblUsername1.setText("WELCOME");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/5fd27b8aeba79306216883.gif"))); // NOI18N
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(53, Short.MAX_VALUE)
+                .addContainerGap(56, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel9)
@@ -209,14 +199,12 @@ InsuranceAdminOrganization iOrg;
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addComponent(jLabel1)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(226, 226, 226)
+                        .addGap(466, 466, 466)
                         .addComponent(jLabel9))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
+                        .addGap(272, 272, 272)
                         .addComponent(lblUsername1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblUsername)))
@@ -318,7 +306,6 @@ InsuranceAdminOrganization iOrg;
     private javax.swing.JButton btnPatientHistory;
     private javax.swing.JButton btnRegisterForInsurance;
     private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblUsername;

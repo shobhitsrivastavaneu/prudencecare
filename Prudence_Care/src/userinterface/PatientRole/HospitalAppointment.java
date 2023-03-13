@@ -47,7 +47,7 @@ public class HospitalAppointment extends javax.swing.JPanel {
         this.ecosystem = ecosystem;
         this.account = account;
         String patientName = account.getUsername();
-       // dateApp.setDate(new Date());
+        dateApp.setDate(new Date());
         
         
         for (Patient p : ecosystem.getPatientDirectory().getpatientlist()) {
@@ -117,7 +117,6 @@ public class HospitalAppointment extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jCheckBoxPrimaryHospital = new javax.swing.JCheckBox();
-        jComboBoxTime = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -125,11 +124,13 @@ public class HospitalAppointment extends javax.swing.JPanel {
         jComboBoxHospitalList = new javax.swing.JComboBox<>();
         btnSubmit = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        dateApp = new com.toedter.calendar.JDateChooser();
+        jComboBoxTime = new javax.swing.JComboBox<>();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setForeground(new java.awt.Color(255, 255, 255));
 
-        tblRequest.setBackground(new java.awt.Color(0, 0, 0));
+        tblRequest.setBackground(new java.awt.Color(182, 220, 237));
         tblRequest.setForeground(new java.awt.Color(255, 255, 255));
         tblRequest.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -161,7 +162,8 @@ public class HospitalAppointment extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
         jLabel1.setText("BOOK AN APPOINTMENT ");
 
-        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/back_to_50px.png"))); // NOI18N
+        btnBack.setBackground(new java.awt.Color(49, 193, 255));
+        btnBack.setText("BACK");
         btnBack.setBorder(null);
         btnBack.setBorderPainted(false);
         btnBack.setContentAreaFilled(false);
@@ -174,15 +176,13 @@ public class HospitalAppointment extends javax.swing.JPanel {
         jLabel6.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         jLabel6.setText("Appointment Details");
 
-        jPanel1.setBackground(new java.awt.Color(51, 47, 73));
+        jPanel1.setBackground(new java.awt.Color(49, 163, 222));
         jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jCheckBoxPrimaryHospital.setBackground(new java.awt.Color(51, 47, 73));
+        jCheckBoxPrimaryHospital.setBackground(new java.awt.Color(49, 163, 222));
         jCheckBoxPrimaryHospital.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         jCheckBoxPrimaryHospital.setForeground(new java.awt.Color(255, 255, 255));
         jCheckBoxPrimaryHospital.setText("Primary Hospital");
-
-        jComboBoxTime.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -198,7 +198,7 @@ public class HospitalAppointment extends javax.swing.JPanel {
 
         jComboBoxHospitalList.setForeground(new java.awt.Color(255, 255, 255));
 
-        btnSubmit.setBackground(new java.awt.Color(102, 102, 102));
+        btnSubmit.setBackground(new java.awt.Color(49, 193, 255));
         btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
         btnSubmit.setText("Confirm");
         btnSubmit.addActionListener(new java.awt.event.ActionListener() {
@@ -211,51 +211,69 @@ public class HospitalAppointment extends javax.swing.JPanel {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Appointment Details:");
 
+        dateApp.setForeground(new java.awt.Color(255, 255, 255));
+        dateApp.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dateAppMouseClicked(evt);
+            }
+        });
+
+        jComboBoxTime.setForeground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBoxPrimaryHospital)
-                    .addComponent(jComboBoxHospitalList, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(txtDetails, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jComboBoxTime, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(120, 120, 120))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(339, 339, 339))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jCheckBoxPrimaryHospital)
+                                .addComponent(jComboBoxHospitalList, 0, 183, Short.MAX_VALUE)
+                                .addComponent(txtDetails))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(dateApp, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(33, 33, 33)
+                                .addComponent(jComboBoxTime, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(105, 105, 105))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(339, 339, 339))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel5)
                         .addGap(35, 35, 35)
-                        .addComponent(jLabel3)
-                        .addGap(28, 28, 28)
-                        .addComponent(jLabel4))
+                        .addComponent(jLabel3))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jCheckBoxPrimaryHospital)
                         .addGap(18, 18, 18)
                         .addComponent(jComboBoxHospitalList, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(33, 33, 33)
-                        .addComponent(jComboBoxTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(26, 26, 26)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(dateApp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jComboBoxTime, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel4))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
                         .addComponent(txtDetails, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -271,8 +289,8 @@ public class HospitalAppointment extends javax.swing.JPanel {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
                             .addGap(24, 24, 24)
-                            .addComponent(btnBack)
-                            .addGap(343, 343, 343)
+                            .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(263, 263, 263)
                             .addComponent(jLabel1))
                         .addGroup(layout.createSequentialGroup()
                             .addGap(153, 153, 153)
@@ -287,15 +305,15 @@ public class HospitalAppointment extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnBack)
-                    .addComponent(jLabel1))
-                .addGap(25, 25, 25)
+                    .addComponent(jLabel1)
+                    .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(59, 59, 59)
+                .addGap(62, 62, 62)
                 .addComponent(jLabel6)
                 .addGap(28, 28, 28)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(216, Short.MAX_VALUE))
+                .addContainerGap(227, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -307,11 +325,10 @@ public class HospitalAppointment extends javax.swing.JPanel {
     }//GEN-LAST:event_btnBackActionPerformed
 
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
-        // TODO add your handling code here:
-        if(txtDetails.getText().equals(""))
+       if(txtDetails.getText().equals(""))
         { JOptionPane.showMessageDialog(null, "Please fill the appointment details", "Warning", JOptionPane.WARNING_MESSAGE);
         }else{
-//       date=dateApp.getDate();
+       date=dateApp.getDate();
        LocalDate dates=new java.sql.Date(date.getTime()).toLocalDate();
        String selected=(String) jComboBoxTime.getSelectedItem();
       
@@ -359,15 +376,16 @@ public class HospitalAppointment extends javax.swing.JPanel {
 
     private void dateAppMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dateAppMouseClicked
         // TODO add your handling code here:
-         if(evt.getClickCount()==2)
-        {    
-        }   
+        if(evt.getClickCount()==2)
+        {
+        }
     }//GEN-LAST:event_dateAppMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnSubmit;
+    private com.toedter.calendar.JDateChooser dateApp;
     private javax.swing.JCheckBox jCheckBoxPrimaryHospital;
     private javax.swing.JComboBox<String> jComboBoxHospitalList;
     private javax.swing.JComboBox<String> jComboBoxTime;

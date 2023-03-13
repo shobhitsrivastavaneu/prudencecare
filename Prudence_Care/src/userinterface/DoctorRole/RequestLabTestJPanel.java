@@ -64,14 +64,12 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox<>();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnSubmit.setBackground(new java.awt.Color(0, 0, 0));
+        btnSubmit.setBackground(new java.awt.Color(0, 204, 255));
         btnSubmit.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
         btnSubmit.setText("Submit");
         btnSubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,10 +109,7 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
 
         jComboBox2.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "General Room", "Deluxe Room", "ICU" }));
-        add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 240, 160, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pictures/5fd2e9831848f978715749_1.gif"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 470, -1, 330));
+        add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 240, 180, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
@@ -198,7 +193,6 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField txtResult;

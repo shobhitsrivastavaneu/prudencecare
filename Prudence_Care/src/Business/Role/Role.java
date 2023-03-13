@@ -25,12 +25,9 @@ public abstract class Role {
         LabStaff("LabStaff"),
         PharmacyAdmin("PharmacyAdmin"),
         DeliveryMan("DeliveryMan"),
-        VaccineAdmin("VaccineAdmin"),
-        VaccineScientists("VaccineScientists"),
         InsuranceAdmin("InsuranceAdmin"),
-        InsuranceStaff("InsuranceStaff"),
-        FDAAdmin("FDAAdmin"),
-        ManufactureAdmin("ManufactureAdmin");
+        InsuranceStaff("InsuranceStaff");
+       
         
         private String value;
         private RoleType(String value){

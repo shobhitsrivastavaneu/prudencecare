@@ -35,10 +35,7 @@ public class EnterpriseDirectory {
             enterprise=new HospitalEnterprise(name);
             enterpriseList.add(enterprise);
         }
-         if(type==Enterprise.EnterpriseType.VaccineCompany){
-            enterprise=new VaccineEnterprise(name);
-            enterpriseList.add(enterprise);
-        }
+        
         if(type==Enterprise.EnterpriseType.Laboratory){
             enterprise=new LabEnterprise(name);
             enterpriseList.add(enterprise);
@@ -51,14 +48,7 @@ public class EnterpriseDirectory {
             enterprise=new InsuranceEnterprise(name);
             enterpriseList.add(enterprise);
         }
-        if(type==Enterprise.EnterpriseType.FDA){
-            enterprise=new FDAEnterprise(name);
-            enterpriseList.add(enterprise);
-        }
-        if(type==Enterprise.EnterpriseType.DrugManufacturer){
-            enterprise=new DrugManufacturingEnterprise(name);
-            enterpriseList.add(enterprise);
-        }        
+           
         return enterprise;
     }
 
